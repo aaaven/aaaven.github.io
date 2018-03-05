@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 11px;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+}
+
+/* my name */
+h1 {
+    display: white;
+}
+
+#twitter {
+    float:left;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 12px;
+}
+
+/* section titles */
+h2 {
+    /*display: inline;*/
+    position:relative;
+    left: 10px;
+    /*top: -38px;*/
+    width:256px;
+    background-color: #ec008c;
+    color: white;
+    padding: 4px;
+}
+
+/* project titles */
+h3 {
+    display: inline;
+    font-size: 1em;
+}
+
+.section {
+    float:left;
+    clear: right;
+    margin: 20px 0;
+}
+
+nav ul li{
+    float:left;
+    /*clear: right;*/
+    margin: 20px 0;
+}
+
+.class {
+    position: relative;
+    clear: none;
+    float: left;
+    width: 256px;
+    margin: 4px;
+    padding: 8px;
+    background-color: #444;
+    color: white;
+}
+
+.project {
+    height: 324px;
+}
+
+.project img {
+    /*
+    border: 1px #888 solid;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    */
+}
+
+.cell div {
+    padding: 4px;
+    background-color: #666;
+}
+
+.description {
+    max-height: 10em;
+    overflow: auto;
+    margin-bottom: 4px
+}
+
+.cell ul {
+    padding: 4px;
+    background-color: #666;
+    margin: 0;
+}
+
+.cell li {
+    display: inline;
+}
+
+/* everything but the img */
+
+.class * a {
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+.class * a:link {
+    color: #000;
+    background-color: #ffee00;
+}
+
+.class * a:visited {
+    /*color: #fff;*/
+    /*background-color: #00abec;*/
+}
+
+.class * a:hover {
+    color: #fff;
+    background-color: #ec008c;
+}
