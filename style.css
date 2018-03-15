@@ -3,6 +3,26 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+html {
+    font-size: 12px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    font: 200 1em Helvetica, Arial, sans-serif;
+    color: #555;
+    letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #555;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+
 @media screen and (min-width: 1024px) {
 
     sidebar {
@@ -156,14 +176,7 @@ footer, header, hgroup, menu, nav, section {
      padding: 0;
  }
 
-.class_title {
-    display: inline-block;
-    width: 250px;
-    margin: 0 10px 5px 10px;
-    padding: 0;
-}
-
-.class_time{
+.class_title, .class_time, .class_lan{
     display: inline-block;
     width: 250px;
     margin: 0 10px 5px 10px;
@@ -173,7 +186,7 @@ footer, header, hgroup, menu, nav, section {
     display: inline-block;
     background:white;
     width: 250px;
-    height:145px;
+    height:125px;
     margin: 0 10px 5px 10px;
     padding: 0;
     overflow: auto;
@@ -186,11 +199,21 @@ footer, header, hgroup, menu, nav, section {
     padding: 0;
 }
 
-.class_link >a{
+a{
     text-decoration: none;
+
+}
+.class_link >a{
     border-radius: 1px;
     padding: 0 2px 0 2px;
     background: #ffee00;
+
+}
+
+.class_lan >a{
+    border-radius: 1px;
+    padding: 0 2px 0 2px;
+    background: #ec008c;
 
 }
 /** a:link{*/
