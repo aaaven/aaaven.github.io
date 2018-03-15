@@ -1,0 +1,494 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
+
+/***************/
+/* MEYER RESET */
+/***************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/**************/
+/* BASE RULES */
+/**************/
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    background: #fcfcfc;
+    font: 200 1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+    margin: 2em auto;
+    max-width: 1005px;
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+    font-weight: 500;
+    line-height: 1.7;
+    margin: 1em 0 15px;
+    padding: 0;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #666;
+}
+@media screen and (max-width: 1020px) {
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.4;
+    }
+}
+
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 1.3em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 0.9em;
+}
+
+p {
+    margin: 0.8em 0;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: filter 0.3s ease, color 0.3s ease;
+    -moz-transition: filter 0.3s ease, color 0.3s ease;
+    -ms-transition: filter 0.3s ease, color 0.3s ease;
+    -o-transition: filter 0.3s ease, color 0.3s ease;
+    transition: filter 0.3s ease, color 0.3s ease;
+}
+a:hover, a:active {
+    color: #555;
+}
+
+ul, ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+    margin: 0;
+}
+
+ul ul, ol ul {
+    list-style-type: circle;
+}
+
+em, i {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: 500;
+}
+
+img, video {
+    max-width: 100%;
+    border-radius: 0.7em;
+    padding: 0.2em;
+}
+
+table {
+    margin-bottom: 1.5em;
+}
+table td {
+    padding: 0.2em 0.2em;
+}
+
+.container {
+    width: 825px;
+    margin-left: 180px;
+}
+@media screen and (max-width: 1020px) {
+    .container {
+        width: 90%;
+        margin: 5%;
+    }
+}
+
+.entry {
+    margin: 0.8em 0;
+}
+
+.date {
+    font-weight: 200;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.filter {
+    -webkit-transition: filter 0.3s ease;
+    -moz-transition: filter 0.3s ease;
+    -ms-transition: filter 0.3s ease;
+    -o-transition: filter 0.3s ease;
+    transition: filter 0.3s ease;
+    -webkit-filter: grayscale(100%) blur(5px);
+    filter: grayscale(100%) blur(5px);
+}
+@media screen and (max-width: 1020px) {
+    .filter {
+        -webkit-filter: grayscale(0%) blur(0px);
+        filter: grayscale(0%) blur(0px);
+    }
+}
+
+.filter:hover {
+    -webkit-filter: grayscale(0%) blur(0px);
+    filter: grayscale(0%) blur(0px);
+}
+
+.thumb {
+    width: 20%;
+    float: left;
+}
+@media screen and (max-width: 1020px) {
+    .thumb {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .thumb {
+        width: 50%;
+    }
+}
+
+.tile {
+    display: none;
+}
+
+.tile:nth-child(-n+15) {
+    display: block;
+}
+
+@media screen and (max-width: 1020px) {
+    .tile:nth-child(16) {
+        display: block;
+    }
+}
+
+.about {
+    width: 50%;
+    float: left;
+    display: block;
+}
+@media screen and (max-width: 640px) {
+    .about {
+        width: 100%;
+    }
+}
+
+.filter:last-child .about {
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+@media screen and (max-width: 640px) {
+    .filter:last-child .about {
+        -webkit-transform: scale(1, -1);
+        -moz-transform: scale(1, -1);
+        -o-transform: scale(1, -1);
+        transform: scale(1, -1);
+    }
+}
+
+.gmnoprint img {
+    max-width: none;
+}
+
+::-moz-selection {
+    color: #fcfcfc;
+    background: #555;
+}
+
+::selection {
+    color: #fcfcfc;
+    background: #555;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 11px;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+}
+
+
+
+sidebar {
+    position: fixed;
+    top:30%;
+    /*left:0;*/
+
+    width: 128px;
+    padding: 0 25px;
+    float: left;
+    /*clear:none;*/
+    /*display: inline;*/
+    text-align: center;
+
+    /*position: -webkit-sticky; !* Safari *!*/
+    /*position: sticky;*/
+    /*top: 0px;*/
+
+}
+
+
+
+article{
+    position: relative;
+    left: 140px;
+    width: 720px;
+    padding: 0 25px;
+    float: left;
+    clear:none;
+    display: inline;
+    /*text-align: center;*/
+}
+
+nav {
+    padding: 0.3em 0;
+    margin: 1em 0;
+    text-transform: lowercase;
+}
+@media screen and (max-width: 720px) {
+    nav {
+        float: none;
+    }
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    font-size: 1em;
+    padding: 0.3em 0;
+    list-style: none;
+    clear: right;
+}
+
+section li {
+    font-size: 1em;
+    padding: 0.3em 0;
+    list-style: none;
+    clear: right;
+}
+
+/* my name */
+h1 {
+    display: white;
+}
+
+/*#twitter {*/
+/*float:left;*/
+/*text-decoration: none;*/
+/*color: white;*/
+/*font-size: 24px;*/
+/*margin: 12px;*/
+/*}*/
+
+/* section titles */
+/*h2 {*/
+/*!*display: inline;*!*/
+/*position:relative;*/
+/*left: 10px;*/
+/*!*top: -38px;*!*/
+/*width:256px;*/
+/*background-color: #ec008c;*/
+/*color: white;*/
+/*padding: 4px;*/
+/*}*/
+
+/* project titles */
+h3 {
+    display: inline;
+    font-size: 1em;
+}
+
+/*.section {*/
+/*float:left;*/
+/*clear: right;*/
+/*margin: 20px 0;*/
+/*}*/
+
+/*nav ul li{*/
+/*float:left;*/
+/*!*clear: right;*!*/
+/*margin: 20px 0;*/
+/*}*/
+
+/*header{*/
+/*position: relative;*/
+/*clear: right;*/
+/*float: none;*/
+/*!*width: 256px;*!*/
+/*margin: 4px;*/
+/*padding: 8px;*/
+/*!*background-color: #444;*!*/
+/*!*color: white;*!*/
+
+/*}*/
+
+
+.class {
+    position: relative;
+    clear: none;
+    float: left;
+    width: 200px;
+    margin: 4px;
+    padding: 8px;
+    background-color: #444;
+    color: white;
+}
+
+/*.project {*/
+/*height: 324px;*/
+/*}*/
+
+/*.project img {*/
+/*!**/
+/*border: 1px #888 solid;*/
+/*box-sizing:border-box;*/
+/*-moz-box-sizing:border-box;*/
+/*-webkit-box-sizing:border-box;*/
+/**!*/
+/*}*/
+
+/*.cell div {*/
+/*padding: 4px;*/
+/*background-color: #666;*/
+/*}*/
+
+/*.description {*/
+/*max-height: 10em;*/
+/*overflow: auto;*/
+/*margin-bottom: 4px*/
+/*}*/
+
+/*.cell ul {*/
+/*padding: 4px;*/
+/*background-color: #666;*/
+/*margin: 0;*/
+/*}*/
+
+/*.cell li {*/
+/*display: inline;*/
+/*}*/
+
+/* everything but the img */
+
+.class * a {
+text-decoration: none;
+padding: 0 2px;
+}
+
+/*.class * a:link {*/
+/*color: #000;*/
+/*background-color: #ffee00;*/
+/*}*/
+
+/*.class * a:visited {*/
+/*!*color: #fff;*!*/
+/*!*background-color: #00abec;*!*/
+/*}*/
+
+/*.class * a:hover {*/
+/*color: #fff;*/
+/*background-color: #ec008c;*/
+/*}*/
