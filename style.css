@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
         margin:0px 0px 0px 90px;
         width:180px;
     }
+
     nav ul{
         list-style：none;
         margin:0;
@@ -111,9 +112,7 @@ h1, h2, h3, h4, h5, h6 {
         width: auto;
     }
 
-
     /*sidebar layout*/
-
     nav{
         position: relative;
         top: 30px;
@@ -135,8 +134,8 @@ h1, h2, h3, h4, h5, h6 {
 
     nav ul li{
         list-style: none;
-        background:lightgray;
         border-radius: 5px;
+        background: lightgrey;
         display: table;
         margin: 0 10px 10px 0;
         padding:0;
@@ -144,10 +143,16 @@ h1, h2, h3, h4, h5, h6 {
         height:45px;
         float:left;
     }
+
+    nav ul li:hover{
+        background:dimgray;
+}
+
     nav ul li a{
     display: table-cell;
     text-align: center;
     vertical-align:middle;
+    font-size: 1.2em;
     }
 
     /*content layout*/
@@ -162,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 20px 20px 20px;
 }
 
-.class {
+.class, .project{
     /*position: relative;*/
     display: inline-block;
     width: 270px;
@@ -172,7 +177,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: lightgray;
 }
 
-.class_logo{
+.project{
+    height:270px;
+}
+
+.class_logo, .project_logo{
     position: relative;
      display: inline-block;
      width: 250px;
@@ -181,13 +190,13 @@ h1, h2, h3, h4, h5, h6 {
      padding: 0;
  }
 
-.class_title, .class_time, .class_lan{
+.class_title, .class_time, .class_lan,.project_title, .project_time,.project_lan{
     display: inline-block;
     width: 250px;
     margin: 0 10px 5px 10px;
     padding: 0;
 }
-.class_intro{
+.class_intro, .project_intro{
     display: inline-block;
     background:white;
     width: 250px;
@@ -196,8 +205,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     overflow: auto;
 }
+.project_intro{
+    height:40px;
 
-.class_link{
+}
+.class_link, .project_link{
     display: inline-block;
     width: 250px;
     margin: 0 10px 10px 10px;
@@ -208,14 +220,14 @@ a{
     text-decoration: none;
 }
 
-.class_link >a{
+.class_link >a,.project_link >a{
     border-radius: 1px;
     padding: 0 2px 0 2px;
     background: #ffee00;
 
 }
 
-.class_lan >a{
+.class_lan >a,.project_lan >a{
     border-radius: 1px;
     padding: 0 2px 0 2px;
     background: #ec008c;
