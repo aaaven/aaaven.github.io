@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 1024px) {
 
-    sidebar {
+    #bar {
         position: fixed;
         top: 0;
         left: 0;
@@ -58,12 +58,20 @@ h1, h2, h3, h4, h5, h6 {
 
     nav ul li{
         list-style: none;
-        margin:0 0 10px 0;
-        padding:0;
-        height:60px;
         background:lightgray;
         border-radius: 5px;
+
+        display: table;
+        margin:0 0 10px 0;
+        padding:0;
+        width:180px;
+        height:60px;
+    }
+
+    nav ul li a{
+        display: table-cell;
         text-align: center;
+        vertical-align:middle;
     }
 
     #contact_aven{
@@ -78,20 +86,23 @@ h1, h2, h3, h4, h5, h6 {
 
     /*content layout*/
     .content{
-        position: relative;
+        position: sticky;
         margin:45px 0px 0px 0px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    /*sidebar {*/
-        /*position:relative;*/
-        /*background: lightgreen;*/
-        /*margin: 45px 45px 0 45px;*/
-        /*padding:0;*/
-        /*width: auto;*/
-        /*height: 180px;*/
-    /*}*/
+    #bar {
+        position: -webkit-sticky;
+        position: sticky;
+        top:0;
+        background: white;
+        margin: 45px;
+        padding:0;
+        height: 145px;
+        width: auto;
+        z-index:10;
+    }
 
     article {
         position: relative;
@@ -105,15 +116,14 @@ h1, h2, h3, h4, h5, h6 {
 
     nav{
         position: relative;
-        margin: 0 0 0 45px;
-        width:450px;
-        height:90px;
+        width:470px;
+        height:100px;
     }
+
     .logo{
-        width:90px;
-        height:90px;
+        width:100px;
+        height:100px;
         padding:0;
-        margin: 0 45px 0 0;
         float:right;
     }
     nav ul{
@@ -126,25 +136,29 @@ h1, h2, h3, h4, h5, h6 {
         list-style: none;
         background:lightgray;
         border-radius: 5px;
-        margin:0;
+        display: table;
+        margin: 0 10px 10px 0;
         padding:0;
         width:225px;
         height:45px;
         float:left;
-        text-align: center;
+    }
+    nav ul li a{
+    display: table-cell;
+    text-align: center;
+    vertical-align:middle;
     }
 
-    #contact_aven{
-        width:225px;
-        height:45px;
-        margin: 0;
-        text-align: center;
-    }
+    /*#contact_aven{*/
+        /*width:225px;*/
+        /*height:45px;*/
+        /*margin: 0;*/
+        /*text-align: center;*/
+    /*}*/
 
     /*content layout*/
     .content{
         background: #ffee00;
-        /*position: relative;*/
         margin:45px 0 0 0;
 
     }
