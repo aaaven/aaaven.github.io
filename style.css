@@ -150,9 +150,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
-
-
 .statement{
     margin: 0 20px 20px 20px;
 }
@@ -162,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     width: 270px;
     height:360px;
-    margin: 0 0 20px 20px;
+    margin: 0 0 10px 10px;
     padding: 0;
     background-color: lightgray;
 }
@@ -201,8 +198,8 @@ h1, h2, h3, h4, h5, h6 {
 
 a{
     text-decoration: none;
-
 }
+
 .class_link >a{
     border-radius: 1px;
     padding: 0 2px 0 2px;
