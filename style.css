@@ -59,9 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
     nav ul li{
         list-style: none;
-        background:lightgray;
         border-radius: 5px;
-
         display: table;
         margin:0 0 10px 0;
         padding:0;
@@ -73,6 +71,11 @@ h1, h2, h3, h4, h5, h6 {
         display: table-cell;
         text-align: center;
         vertical-align:middle;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #555;
+        font-weight: 500;
+        line-height: 1.7;
+        font-size: 1em;
     }
 
     #contact_aven{
@@ -82,13 +85,16 @@ h1, h2, h3, h4, h5, h6 {
         height:60px;
         margin:0 0 45px 0;
         text-align: center;
-        background:lightgray;
+        /*background:#ee0058;*/
+    }
+
+    nav ul li:hover{
+        background:#ffee00;
     }
 
     /*content layout*/
     .content{
         position: sticky;
-        margin:45px 0px 0px 0px;
     }
 }
 
@@ -116,51 +122,54 @@ h1, h2, h3, h4, h5, h6 {
     nav{
         position: relative;
         top: 30px;
-        width:470px;
+        /*margin-left: 10px;*/
+        /*width:470px;*/
     }
 
     .logo{
+        border-radius: 10px;
         width:100px;
         height:100px;
         margin:30px 0 0 0;
         padding:0;
         float:right;
+        background-color: #ec008c;
     }
     nav ul{
         list-style：none;
-        margin:0;
+        margin-left:10px;
         padding:0;
+
     }
 
     nav ul li{
+
         list-style: none;
         border-radius: 5px;
-        background: lightgrey;
+        /*background: lightgrey;*/
         display: table;
         margin: 0 10px 10px 0;
         padding:0;
-        width:225px;
+        width:270px;
         height:45px;
         float:left;
     }
 
     nav ul li:hover{
-        background:dimgray;
+        background:#ffee00;
+    }
+
+    nav ul li a {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 1.2em;
+    }
 }
 
-    nav ul li a{
-    display: table-cell;
-    text-align: center;
-    vertical-align:middle;
-    font-size: 1.2em;
-    }
-
-    /*content layout*/
-    .content{
-        /*background: #ffee00;*/
-        margin:45px 0 0 0;
-
-    }
+/*content layout*/
+.content{
+    margin:45px 0 0 0;
 }
 
 .statement{
@@ -170,45 +179,79 @@ h1, h2, h3, h4, h5, h6 {
 .class, .project{
     /*position: relative;*/
     display: inline-block;
+    border-radius: 7px;
+    /*background-color: dimgray;*/
     width: 270px;
     height:360px;
     margin: 0 0 10px 10px;
     padding: 0;
-    background-color: lightgray;
 }
 
 .project{
     height:270px;
 }
 
+.class:hover,.project:hover{
+    background-color: #ffee00;
+    z-index: -1;
+}
+
+/*.content :hover{*/
+    /*background-color: #ffee00;*/
+    /*z-index: -1;*/
+/*}*/
+
 .class_logo, .project_logo{
-    position: relative;
-     display: inline-block;
-     width: 250px;
-     height:125px;
-     margin: 10px;
-     padding: 0;
+    display: inline-block;
+    width: 250px;
+    height:125px;
+    margin: 10px 10px 0 10px;
+    padding: 0;
  }
 
+.class_img, .project_img{
+    border-radius: 5px 5px 0 0;
+    margin:0;
+    padding:0;
+}
+
+.class_intro, .project_intro{
+    display: inline-block;
+    background:white;
+    border-radius: 0 0 5px 5px;
+    width: 240px;
+    height:125px;
+    margin: -2.5px 10px 5px 10px;
+    padding: 5px;
+    z-index: -1;
+    overflow: hidden;
+}
+.class_intro:hover{
+    /*position: relative;*/
+    background:white;
+    border-radius:5px;
+    height:250px;
+    margin: -127.5px 10px 5px 10px;
+    z-index: 10;
+}
+.project_intro{
+    margin: 0 10px 5px 10px;
+    height:40px;
+}
+.project_intro:hover{
+    background:white;
+    border-radius:5px;
+    height:165px;
+    margin: -125px 10px 5px 10px;
+    z-index: 10;
+}
 .class_title, .class_time, .class_lan,.project_title, .project_time,.project_lan{
     display: inline-block;
     width: 250px;
     margin: 0 10px 5px 10px;
     padding: 0;
 }
-.class_intro, .project_intro{
-    display: inline-block;
-    background:white;
-    width: 250px;
-    height:125px;
-    margin: 0 10px 5px 10px;
-    padding: 0;
-    overflow: auto;
-}
-.project_intro{
-    height:40px;
 
-}
 .class_link, .project_link{
     display: inline-block;
     width: 250px;
@@ -220,19 +263,19 @@ a{
     text-decoration: none;
 }
 
-.class_link >a,.project_link >a{
-    border-radius: 1px;
+.class_link >a,.project_link >a,footer >a,.class_lan >a,.project_lan >a,span{
+    border-radius: 2px;
+    color: #555;
     padding: 0 2px 0 2px;
     background: #ffee00;
 
 }
 
-.class_lan >a,.project_lan >a{
-    border-radius: 1px;
-    padding: 0 2px 0 2px;
-    background: #ec008c;
-
+.tab_highlight{
+    font-weight: lighter;
+    font-size: 1.5em;
 }
-/** a:link{*/
-    /*background-color: #ffee00;*/
+
+/*.class_lan >a,.project_lan >a,span{*/
+    /*background: #ee0058;*/
 /*}*/
