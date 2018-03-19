@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 @media screen and (min-width: 1024px) {
 
     #bar {
@@ -259,11 +260,14 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+
+
+
 a{
     text-decoration: none;
 }
 
-.class_link >a,.project_link >a,footer >a,.class_lan >a,.project_lan >a,span{
+.class_link >a,.project_link >a,.class_lan >a,.project_lan >a,span,.notes >a{
     border-radius: 2px;
     color: #555;
     padding: 0 2px 0 2px;
@@ -271,11 +275,11 @@ a{
 
 }
 
+.notes{
+    margin: 90px 0 70px 370px;
+}
+
 .tab_highlight{
     font-weight: lighter;
     font-size: 1.5em;
 }
-
-/*.class_lan >a,.project_lan >a,span{*/
-    /*background: #ee0058;*/
-/*}*/
