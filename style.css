@@ -45,6 +45,8 @@ h1, h2, h3, h4, h5, h6 {
     /*sidebar layout*/
     .logo{
         margin: 90px;
+        border-radius: 90px;
+        background: black;
     }
 
     nav{
@@ -97,6 +99,11 @@ h1, h2, h3, h4, h5, h6 {
     .content{
         position: sticky;
     }
+
+    .notes{
+        position: relative;
+        margin: 360px 0 70px 370px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -134,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
         margin:30px 0 0 0;
         padding:0;
         float:right;
-        background-color: #ec008c;
+        background-color: black;
     }
     nav ul{
         list-style：none;
@@ -166,6 +173,12 @@ h1, h2, h3, h4, h5, h6 {
         vertical-align: middle;
         font-size: 1.2em;
     }
+
+    .notes{
+        position: relative;
+        margin: 360px 0 70px 60px;
+    }
+
 }
 
 /*content layout*/
@@ -174,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .statement{
-    margin: 0 20px 20px 20px;
+    margin: 0 120px 20px 20px;
 }
 
 .class, .project{
@@ -275,9 +288,17 @@ a{
 
 }
 
-.notes{
-    margin: 90px 0 70px 370px;
-}
+/*.notes{*/
+    /*position: relative;*/
+    /*margin: 360px 0 70px 370px;*/
+/*}*/
+
+/*@media screen and (max-width: 1024px) {*/
+    /*.notes{*/
+        /*position: relative;*/
+        /*margin: 360px 0 70px 60px;*/
+    /*}*/
+/*}*/
 
 .tab_highlight{
     font-weight: lighter;
