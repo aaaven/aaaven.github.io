@@ -1,0 +1,10 @@
+-------------------------------------basic info----------------------
+Aves
+
+by Aven Le Zhou
+Mar 22, 2017
+
+Aves is an app developed by Aven with Processing( a java framework for creative coding), you can find more information on this project at aven.cc/aves
+
+Aves is the latin word of birds, and this app is the implementation of a flocking system, which can work with any open sound control protocol supported platform, like rhino/grasshopper. 
+
