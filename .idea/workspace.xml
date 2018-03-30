@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31bfc1bf-994a-4612-b51c-89a649a37c38" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" afterPath="$PROJECT_DIR$/images/logo.png" />
       <change beforePath="$PROJECT_DIR$/teaching.html" afterPath="$PROJECT_DIR$/teaching.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -64,8 +64,8 @@
       <file leaf-file-name="teaching.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/teaching.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+            <state relative-caret-position="507">
+              <caret line="158" column="22" lean-forward="true" selection-start-line="158" selection-start-column="22" selection-end-line="158" selection-end-column="22" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#section#1;n#section#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -112,6 +112,7 @@
       <find>one_glance</find>
       <find>model</find>
       <find>welcome_to_CR</find>
+      <find>vgd</find>
     </findStrings>
     <replaceStrings>
       <replace>125</replace>
@@ -184,6 +185,11 @@
             <path>
               <item name="aaaven.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="aaaven.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aaaven.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aaaven.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -230,12 +236,12 @@
       <workItem from="1521472866494" duration="36645000" />
       <workItem from="1522295797502" duration="8704000" />
       <workItem from="1522376874035" duration="153000" />
-      <workItem from="1522397490730" duration="4945000" />
+      <workItem from="1522397490730" duration="5914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124253000" />
+    <option name="totallyTimeSpent" value="125222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="991" extended-state="0" />
@@ -613,20 +619,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/logo.png" />
     <entry file="file://$PROJECT_DIR$/digitalfilm.html" />
     <entry file="file://$PROJECT_DIR$/_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6825">
           <caret line="455" column="5" lean-forward="false" selection-start-line="455" selection-start-column="5" selection-end-line="455" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/aves.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -639,6 +636,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4155">
@@ -646,6 +648,14 @@
           <folding>
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/aves.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -661,8 +671,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/teaching.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+        <state relative-caret-position="507">
+          <caret line="158" column="22" lean-forward="true" selection-start-line="158" selection-start-column="22" selection-end-line="158" selection-end-column="22" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#section#1;n#section#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
