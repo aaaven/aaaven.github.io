@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31bfc1bf-994a-4612-b51c-89a649a37c38" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-    </list>
+    <list default="true" id="31bfc1bf-994a-4612-b51c-89a649a37c38" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="152" column="34" lean-forward="false" selection-start-line="152" selection-start-column="27" selection-end-line="152" selection-end-column="34" />
+            <state relative-caret-position="410">
+              <caret line="160" column="59" lean-forward="true" selection-start-line="160" selection-start-column="59" selection-end-line="160" selection-end-column="59" />
               <folding>
                 <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -39,13 +36,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weibot.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="weibot.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/weibot.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project_logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/projects/live_of_code/project_logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -120,11 +124,11 @@
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/projects/aves.html" />
         <option value="$PROJECT_DIR$/projects/mdx_logo/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/projects/mdx_logo.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/projects/mdx_logo.js" />
         <option value="$PROJECT_DIR$/projects/weibot.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -135,8 +139,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="90" />
-    <option name="y" value="23" />
+    <option name="x" value="166" />
+    <option name="y" value="74" />
     <option name="width" value="1590" />
     <option name="height" value="991" />
   </component>
@@ -249,15 +253,15 @@
       <workItem from="1522397490730" duration="8651000" />
       <workItem from="1523241517469" duration="2320000" />
       <workItem from="1523434325672" duration="945000" />
-      <workItem from="1523518321839" duration="7447000" />
+      <workItem from="1523518321839" duration="7910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138671000" />
+    <option name="totallyTimeSpent" value="139134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="90" y="23" width="1590" height="991" extended-state="0" />
+    <frame x="166" y="74" width="1590" height="991" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20503144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -290,16 +294,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/aves.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -678,21 +672,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="152" column="34" lean-forward="false" selection-start-line="152" selection-start-column="27" selection-end-line="152" selection-end-column="34" />
-          <folding>
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/weibot.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/projects/live_of_code/project_logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="160" column="59" lean-forward="true" selection-start-line="160" selection-start-column="59" selection-end-line="160" selection-end-column="59" />
+          <folding>
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
