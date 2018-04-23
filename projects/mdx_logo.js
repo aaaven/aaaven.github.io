@@ -12,7 +12,7 @@ var dist_overlap = 20,
  pmx = 0,
  pmy = 0;
 var lcol, bgcolor;
-var debug = false,
+var debug = true,
  clrFading = false;
 
 function setup() {

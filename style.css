@@ -184,6 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 /*content layout*/
 .content{
     margin:45px 0 0 0;
+    width: 860px;
 }
 
 .statement{
@@ -287,9 +288,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-
-
-
 a{
     text-decoration: none;
 }
@@ -325,6 +323,17 @@ a{
     font-size: 4.5em;
 }
 
+.subtitle{
+    font-size: 2em;
+}
+
 #p5_sketch .sketch_container{
     border-radius: 50px;
+}
+
+.centered_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
 }
