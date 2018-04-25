@@ -1,0 +1,1 @@
+Source code for Aven's portfolio, which is a record of his works from spring 2015 when he joined IMA and started to play with code and interactive media. This website is built in Spring 2018 and every bit is coded from scratch with html and css only. Feel free to tweak and make your own version.
