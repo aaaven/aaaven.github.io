@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <title>weibot</title>
-    <link rel = "icon" href = "../images/logo.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png" />
+    <link rel="icon" href="../images/logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png"/>
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
-<section id = "bar">
-    <img src = "../images/logo.svg" width = 180 class = "logo">
+<section id="bar">
+    <img src="../images/logo.svg" width=180 class="logo">
     <nav>
         <ul>
             <li>
-                <a href = "../index.html"><span class = "tab_highlight">Projects</span></a>
+                <a href="../index.html"><span class="tab_highlight">Projects</span></a>
             </li>
             <li>
-                <a href = "teaching.html"><span>Teaching</span></a>
+                <a href="../teaching.html"><span>Teaching</span></a>
             </li>
             <li>
-                <a href = "about.html"><span>About</span></a>
+                <a href="../about.html"><span>About</span></a>
             </li>
-            <li id = "contact_aven">
+            <li id="contact_aven">
                 <a data-email="hi@aven.cc" href="mailto:hi@aven.cc"><span>hi@aven.cc</span></a>
             </li>
         </ul>
@@ -38,43 +38,65 @@
     </nav>
 </section>
 <article>
-    <section class = "content">
-        <h1 class = "title">Weibot</h1>
-        <p class = "project_time">February 2018</p>
+    <section class="content">
+        <h1 class="title">Weibot</h1>
+        <p class="project_time">February 2018</p>
         <br>
-        <div class = "project_lan">
+        <div class="project_lan">
             Language:
             <a>Python</a>
         </div>
         <br>
-        <div class = "project_link">
-            <a href = "https://github.com/aaaven/weibot" target = "_blank">Code</a>
-            <a href = "https://github.com/aaaven/weibot/blob/master/tutorial.md" target="_blank">Tutorial</a>
+        <div class="project_link">
+            <a href="https://github.com/aaaven/weibot" target="_blank">Code</a>
+            <a href="https://github.com/aaaven/weibot/blob/master/tutorial.md" target="_blank">Tutorial</a>
         </div>
-    </section >
-
-    <section class = "content">
-        <h2 class = "subtitle">Overview</h2>
-
-
     </section>
 
-    <section class = "content">
-        <h2 class = "subtitle">Documentation</h2>
-
-
+    <section class="content">
+        <h2 class="subtitle">Overview</h2>
+        <p class="description">
+            Weibot is a social media robot on Chinese <a href="weibo.com" target="_blank">Weibo</a> platform.
+            Weibo, the twwiter like social media platform, literally means micro blog, has more than 165 milllions of
+            activated user (per day) and the most popular user and famous actress <a href="https://weibo.com/xiena" target="_blank"> Xie Na</a> has
+            more than 100 millions of followers (according to weibo
+            <a href="http://data.weibo.com/report/file/view?download_name=c8a20659-b502-16db-a3c2-f05474ad1eaf&file-type=.pdf"
+               target="_blank">user statistical report</a>
+            by September 2017).
+            <br><br>
+            Instead of a social bot with designed behaviors, this robot is intended to response to its autonomy through learning.
+            A nature language processing method bases on Markov Chain was considered;
+            this bot wil learn from existed history post of one human user and create its own post
+            (prediction from estimated Markov chain model).
+            <br><br>
+            In order to build the learning model(markov chain), history post of one selected user needs to be acquired.
+            With web scraping technique, this robot can scrape all recorded post of any given id, take Xie na as example,
+            all of her posts in past 9 years has been scraped and store
+            <a href="https://github.com/aaaven/weibot/blob/master/1003061192329374/text.txt" target="_blank">here</a>.
+            Since the learning model part is still under development, all post has been analyzed and result in a word frequency map for now.
+        </p>
+        <img src="../images/projects/weibot/main.gif" width="800">
     </section>
 
-    <section class = "content">
-        <h2 class = "subtitle">Future Development</h2>
+    <!--<section class="content">-->
+        <!--<h2 class="subtitle">Documentation</h2>-->
+    <!--</section>-->
 
+    <section class="content">
+        <h2 class="subtitle">Future Development</h2>
+        <p class="description">
+            Keep working on the learning model till it can get some reasonable post meanwhile take Xie Na's new post as cross references.
+            Xie, as the No.1 weibo user keeps more than 5 to 10 posts everyday.
+            And the NLP markov chain library considered for this project is <a href="https://github.com/jsvine/markovify" target="_blank">Markovify</a>
+        </p>
 
     </section>
 
 </article>
 
-<section class = "notes">
-    <a href = "https://github.com/aaaven/aaaven.github.io" target = "_blank">Source code</a> for this website is available on github.
+<section class="notes">
+    <a href="https://github.com/aaaven/aaaven.github.io" target="_blank">Source code</a> for this website is available
+    on github.
 </section>
 
 </body>

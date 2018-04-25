@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <title>one glance</title>
-    <link rel = "icon" href = "../images/logo.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png" />
+    <link rel="icon" href="../images/logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png"/>
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
-<section id = "bar">
-    <img src = "../images/logo.svg" width = 180 class = "logo">
+<section id="bar">
+    <img src="../images/logo.svg" width=180 class="logo">
     <nav>
         <ul>
             <li>
-                <a href = "../index.html"><span class = "tab_highlight">Projects</span></a>
+                <a href="../index.html"><span class="tab_highlight">Projects</span></a>
             </li>
             <li>
-                <a href = "teaching.html"><span>Teaching</span></a>
+                <a href="teaching.html"><span>Teaching</span></a>
             </li>
             <li>
-                <a href = "about.html"><span>About</span></a>
+                <a href="about.html"><span>About</span></a>
             </li>
-            <li id = "contact_aven">
+            <li id="contact_aven">
                 <a data-email="hi@aven.cc" href="mailto:hi@aven.cc"><span>hi@aven.cc</span></a>
             </li>
         </ul>
@@ -39,47 +39,87 @@
 </section>
 
 <article>
-    <section class = "content">
-        <h1 class = "title">One Glance</h1>
-        <p class = "project_time">December 2017</p>
+    <section class="content">
+        <h1 class="title">One Glance</h1>
+        <p class="project_time">December 2017</p>
         <br>
-        <div class = "project_lan">
+        <div class="project_lan">
             Language:
             <a>Processing</a>
             <a>P5js</a>
         </div>
         <br>
-        <div class = "project_link">
-            <a href = "https://github.com/aaaven/one_glance" target = "_blank">Code</a>
+        <div class="project_link">
+            <a href="https://github.com/aaaven/one_glance" target="_blank">Code</a>
         </div>
-    </section >
+    </section>
 
-    <section class = "content">
-        <h2 class = "subtitle">Overview</h2>
-        <p>Convert code into p5js and openframeworks;
-            first case is for making it available through browser and latter case is to increase the efficiency and implement more complicated particle system  </p>
+    <section class="content">
+        <h2 class="subtitle">Overview</h2>
+        <p class="description">
+            One glance (惊鸿一瞥）is a webcam based interactive pixel manipulation project.
+            It interacts with user and draws a particle system. The particle system follows mouse motion and presents as
+            animated Long (animal, Chinese dragon).
+            <br>
+            This pattern is created while some wild experiments, but the Long like pattern(some friends also thinks it
+            like neuron) attracts my attention. Then it's made to be a teaching demo in my "See Through Kinect" class as
+            an example in webcam pixel manipulation session. This interactive pattern will shows like a mirror; instead
+            of showing the whole image, it only present one glance of what the camera sees. With the mystery enough
+            pattern,
+            it bring the feeling of some obscure beauty in eastern culture.
+            <br><br>
+            Here is a demo, recorded in front of my favorite sofa.
+        </p>
+        <img src="../images/projects/one_galance/main.gif" width="800">
 
     </section>
 
-    <section class = "content">
-        <h2 class = "subtitle">Documentation</h2>
-        <p>Convert code into p5js and openframeworks;
-            first case is for making it available through browser and latter case is to increase the efficiency and implement more complicated particle system  </p>
+    <section class="content">
+        <h2 class="subtitle">Documentation</h2>
+        <p class="description">
+            The interactive pattern is not an intended design and absolutely an exception when play with code. The Long
+            like interactive drawing caught my attention from beginning.
+            <br><br>
+            A simple demo has been recorded while I am casually moving the mouse around:
+        </p>
+        <img src="../images/projects/one_galance/long_01.gif" width="800">
 
+        <p class="description">
+            Then this pattern is combined with webcam pixels, the result is not very ideal, the pattern remains cool and
+            simply cannot work as mirror to show captured image.
+            <br><br>
+            A recorded demo:
+        </p>
+        <img src="../images/projects/one_galance/cam_long_01.gif" width="800">
+
+        <p class="description">
+            Since webcam pixel manipulation works better with pattern consisted of points and other dot like shapes(not
+            lines), the particle system is modfied to be presented as ellipses.
+            <br><br>
+            A recorded demo:
+        </p>
+        <img src="../images/projects/one_galance/long_02.gif" width="800">
+
+        <p class="description">
+            At last, draw the particle system with webcam captured image pixels.
+        </p>
+        <img src="../images/projects/one_galance/main.gif" width="800">
     </section>
 
 
-    <section class = "content">
-        <h2 class = "subtitle">Future Development</h2>
-        <p>Convert code into p5js and openframeworks;
-            first case is for making it available through browser and latter case is to increase the efficiency and implement more complicated particle system  </p>
+    <section class="content">
+        <h2 class="subtitle">Future Development</h2>
+        <p class="description">Convert code into p5js and openframeworks;
+            first case is for making it available through browser and latter case is to increase the efficiency and
+            implement more complicated particle systems. </p>
 
     </section>
 
 </article>
 
-<section class = "notes">
-    <a href = "https://github.com/aaaven/aaaven.github.io" target = "_blank">Source code</a> for this website is available on github.
+<section class="notes">
+    <a href="https://github.com/aaaven/aaaven.github.io" target="_blank">Source code</a> for this website is available
+    on github.
 </section>
 
 </body>

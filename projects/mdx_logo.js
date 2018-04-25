@@ -28,6 +28,8 @@ function setup() {
 
 
 function draw() {
+ // fill(bgcolor);
+ // rect(0,0,800,320);
  background(bgcolor);
 
  //MOUSE POS: EYE BALL

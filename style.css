@@ -335,13 +335,17 @@ a{
 
 }
 
-#p5_sketch .sketch_container{
+.p5_sketch{
+    width: 800px;
     border-radius: 50px;
 }
 
-.centered_img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*width: 50%;*/
+img {
+    border-radius: 5px;
+}
+
+p >a{
+    /*text-decoration: none;*/
+    /*color: dimgray;*/
+    background: #ffee00;
 }

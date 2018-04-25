@@ -6,29 +6,29 @@
     <title>MDX logo</title>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
     <script src="mdx_logo.js"></script>
-    <link rel = "icon" href = "../images/logo.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png" />
+    <link rel="icon" href="../images/logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png"/>
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
-<section id = "bar">
-    <img src = "../images/logo.svg" width = 180 class = "logo">
+<section id="bar">
+    <img src="../images/logo.svg" width=180 class="logo">
     <nav>
         <ul>
             <li>
-                <a href = "../index.html"><span class = "tab_highlight">Projects</span></a>
+                <a href="../index.html"><span class="tab_highlight">Projects</span></a>
             </li>
             <li>
-                <a href = "teaching.html"><span>Teaching</span></a>
+                <a href="teaching.html"><span>Teaching</span></a>
             </li>
             <li>
-                <a href = "about.html"><span>About</span></a>
+                <a href="about.html"><span>About</span></a>
             </li>
-            <li id = "contact_aven">
+            <li id="contact_aven">
                 <a data-email="hi@aven.cc" href="mailto:hi@aven.cc"><span>hi@aven.cc</span></a>
             </li>
         </ul>
@@ -40,38 +40,67 @@
     </nav>
 </section>
 <article>
-    <section class = "content">
-        <h1 class = "title">MDX Logo</h1>
-        <p class = "project_time">March 2018</p>
+    <section class="content">
+        <h1 class="title">MDX Logo</h1>
+        <p class="project_time">March 2018</p>
         <br>
-        <div class = "project_lan">
+        <div class="project_lan">
             Language:
             <a>P5js</a>
             <a>Processing</a>
         </div>
         <br>
-        <div class = "project_link">
-            <a href = "https://github.com/aaaven/mdx_logo" target = "_blank">Code</a>
-            <a href = "downloads/mdx_logo/mdx_logo.ai" download="mdx_logo">Design</a>
-        </div>
-    </section >
-
-    <section class = "content">
-        <h2 class = "subtitle">Overview</h2>
-        <div id = "p5_sketch" class = "sketch_container">
+        <div class="project_link">
+            <a href="https://github.com/aaaven/mdx_logo" target="_blank">Code</a>
+            <a href="downloads/mdx_logo/mdx_logo.ai" download="mdx_logo">Design</a>
         </div>
     </section>
 
-    <section class = "content">
-        <h2 class = "subtitle">Documentation</h2>
-    <img src = "../images/projects/mdx_logo/project_logo.svg" width = "800">
+    <section class="content">
+        <h2 class="subtitle">Overview</h2>
+        <p class="description">
+            As logo design for a course, this project starts with the initials of class title "Make Design Interact";
+            and chooses circle as basic element to develop the design.
+            Since this class is a foundation course of interactive design and technology, a set of font can react to
+            mouse motion is considered as response to the course content.
+            <br><br>
+            Here is a p5js sketch, the logo interacts with mouse motion; mouse click can toggle debug mode.
+        </p>
+        <div id="p5_sketch" class="sketch_container"></div>
+    </section>
+
+    <section class="content">
+        <h2 class="subtitle">Documentation</h2>
+        <p class="description">
+            After the concept as an interactive font with initials have been developed, this project then focuses on
+            font design.
+            And circle shapes， more specifically a set of concentric circles, has been chosen to be the staring point;
+        </p>
+        <img src="../images/projects/mdx_logo/draft01.svg" width="800">
+        <p class="description">
+            Following the same design but different parameter have been tested, like numbers of division of circle;
+            different cutting angle.
+        </p>
+        <img src="../images/projects/mdx_logo/draft02.svg" width="800">
+        <p class="description">
+            And various "stroke weight" have also be applied and all demonstrate different characters:
+        </p>
+        <img src="../images/projects/mdx_logo/draft03.svg" width="800">
+        <p clas="description">
+            During the processing of testing different "stroke weight", the idea of shifting the inner circle and make
+            it interactive pops up.
+            Thus mouse position has been mapped to the center point of the inner circle. And the eccentricity of two
+            circles successfully constructs an active and dynamic feeling for the design.
+        </p>
+        <img src="../images/projects/mdx_logo/draft04.svg" width="800">
     </section>
 
 
 </article>
 
-<section class = "notes">
-    <a href = "https://github.com/aaaven/aaaven.github.io" target = "_blank">Source code</a> for this website is available on github.
+<section class="notes">
+    <a href="https://github.com/aaaven/aaaven.github.io" target="_blank">Source code</a> for this website is available
+    on github.
 </section>
 
 </body>
