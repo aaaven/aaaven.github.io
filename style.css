@@ -349,3 +349,7 @@ p >a{
     /*color: dimgray;*/
     background: #ffee00;
 }
+
+canvas {
+    vertical-align: top;
+}
