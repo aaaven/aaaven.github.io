@@ -16,7 +16,7 @@ var debug = true,
  clrFading = false;
 
 function setup() {
- var canvas = createCanvas(800, 300);
+ var canvas = createCanvas(860, 320);
  canvas.parent('p5_sketch');
  background(227);
  smooth();

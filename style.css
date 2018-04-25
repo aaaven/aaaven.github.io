@@ -327,6 +327,14 @@ a{
     font-size: 2em;
 }
 
+.description{
+    width: 800px;
+    text-align: justify;
+    font-size: larger;
+    line-height: 1.5em;
+
+}
+
 #p5_sketch .sketch_container{
     border-radius: 50px;
 }
