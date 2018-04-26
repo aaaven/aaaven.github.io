@@ -344,6 +344,16 @@ img {
     border-radius: 5px;
 }
 
+.center_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.center_video{
+    display: block;
+    margin: 0 auto;
+}
+
 p >a{
     /*text-decoration: none;*/
     /*color: dimgray;*/
