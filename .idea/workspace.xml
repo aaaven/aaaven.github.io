@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="31bfc1bf-994a-4612-b51c-89a649a37c38" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/projects/welcome_to_IMA_show.html" afterPath="$PROJECT_DIR$/projects/welcome_to_IMA_show.html" />
-      <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -282,12 +281,12 @@
       <workItem from="1523518321839" duration="14107000" />
       <workItem from="1524292239935" duration="24040000" />
       <workItem from="1524549786583" duration="2101000" />
-      <workItem from="1524654484895" duration="40021000" />
+      <workItem from="1524654484895" duration="40249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211493000" />
+    <option name="totallyTimeSpent" value="211721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="992" extended-state="6" />
