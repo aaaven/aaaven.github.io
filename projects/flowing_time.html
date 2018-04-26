@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <title>flowing time</title>
-    <link rel = "icon" href = "../images/logo.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png" />
+    <link rel="icon" href="../images/logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png"/>
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
-<section id = "bar">
-    <img src = "../images/logo.svg" width = 180 class = "logo">
+<section id="bar">
+    <img src="../images/logo.svg" width=180 class="logo">
     <nav>
         <ul>
             <li>
-                <a href = "../index.html"><span class = "tab_highlight">Projects</span></a>
+                <a href="../index.html"><span class="tab_highlight">Projects</span></a>
             </li>
             <li>
-                <a href = "teaching.html"><span>Teaching</span></a>
+                <a href="teaching.html"><span>Teaching</span></a>
             </li>
             <li>
-                <a href = "about.html"><span>About</span></a>
+                <a href="about.html"><span>About</span></a>
             </li>
-            <li id = "contact_aven">
+            <li id="contact_aven">
                 <a data-email="hi@aven.cc" href="mailto:hi@aven.cc"><span>hi@aven.cc</span></a>
             </li>
         </ul>
@@ -39,42 +39,73 @@
 </section>
 
 <article>
-    <section class = "content">
-        <h1 class = "title">Flowing Time</h1>
-        <p class = "project_time">Spring 2016</p>
+    <section class="content">
+        <h1 class="title">Flowing Time</h1>
+        <p class="project_time">Spring 2016</p>
         <br>
-        <div class = "project_lan">
+        <div class="project_lan">
             Language:
             <a>Processing</a>
         </div>
         <br>
-        <div class = "project_link">
-            <a href = "https://github.com/aaaven/flowing_time" target = "_blank">Code</a>
+        <div class="project_link">
+            <a href="https://github.com/aaaven/flowing_time" target="_blank">Code</a>
         </div>
-    </section >
+    </section>
 
-    <section class = "content">
-        <h2 class = "subtitle">Overview</h2>
-
+    <section class="content">
+        <h2 class="subtitle">Overview</h2>
+        <p class="description">
+            Flowing Time (流光溢彩) is a tool to create photography with unique style. A time-lapse video will be presented
+            with one static image. A transformation from time domain to space domain will be applied to the video; part
+            of each frame will be selected accordingly to frame order on time line. The collage of all selected partial
+            images will present the time-lapse video in one static image.
+        </p>
+        <img src="../images/projects/flowing_time/main.jpg" width="800">
 
     </section>
 
-    <section class = "content">
-        <h2 class = "subtitle">Documentation</h2>
-
-
+    <section class="content">
+        <h2 class="subtitle">Documentation</h2>
+        <p class="description">
+            For a quick prototype, I took this youtube time lapse video as test material:
+        </p>
+        <iframe style="display: block;margin: 0 auto" width="560" height="315"
+                src="https://www.youtube.com/embed/tQBYm7_1hqs" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        <p class="description">
+            20 frames are selected over the time line, and 1/20 of each selected frame is taken and collage as one
+            static
+            image.
+        </p>
+        <img src="../images/projects/flowing_time/prototype01.jpg" width="800px">
+        <p class="description">
+            with an okay result, move forward to selected 800 frames(since target image width is 800px) and take one
+            pixel column from each selected frame and create new image.
+            <br><br>
+            For another time lapse video of one street of Shanghai. Following image is obtained:
+        </p>
+        <img src="../images/projects/flowing_time/prototype02.jpg" width="800px">
+        <p class="description">
+            But the result is not quite nice, because the time lapse video didn't cover enough range of the day.
+        </p>
     </section>
 
-    <section class = "content">
-        <h2 class = "subtitle">Future Development</h2>
-        <p>Add GUI to program: a) video clip controller and curve controller on frame sampling rate over time.</p>
+    <section class="content">
+        <h2 class="subtitle">Future Development</h2>
+        <p class="description">
+            Add GUI to program: a) video clip controller and b) curve controller on frame sampling rate over time.
+            <br><br>
+            Shoot time-lapse video and create time based image.
+        </p>
 
     </section>
 
 </article>
 
-<section class = "notes">
-    <a href = "https://github.com/aaaven/aaaven.github.io" target = "_blank">Source code</a> for this website is available on github.
+<section class="notes">
+    <a href="https://github.com/aaaven/aaaven.github.io" target="_blank">Source code</a> for this website is available
+    on github.
 </section>
 
 </body>

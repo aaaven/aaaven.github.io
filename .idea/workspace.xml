@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31bfc1bf-994a-4612-b51c-89a649a37c38" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/projects/welcome_to_IMA_show.html" afterPath="$PROJECT_DIR$/projects/welcome_to_IMA_show.html" />
+      <change beforePath="$PROJECT_DIR$/projects/flowing_time.html" afterPath="$PROJECT_DIR$/projects/flowing_time.html" />
+      <change beforePath="$PROJECT_DIR$/projects/form_from_formulation.html" afterPath="$PROJECT_DIR$/projects/form_from_formulation.html" />
+      <change beforePath="$PROJECT_DIR$/projects/scanven.html" afterPath="$PROJECT_DIR$/projects/scanven.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,36 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="welcome_to_IMA_show.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/welcome_to_IMA_show.html">
+      <file leaf-file-name="scanven.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/scanven.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-              <folding>
-                <element signature="n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="335" column="1" lean-forward="false" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
+            <state relative-caret-position="460">
+              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_from_formulation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/form_from_formulation.html">
+      <file leaf-file-name="flowing_time.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/flowing_time.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="581">
+              <caret line="88" column="31" lean-forward="true" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
               <folding>
-                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#iframe#0;n#section#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,8 +113,6 @@
         <option value="$PROJECT_DIR$/projects/model_me.html" />
         <option value="$PROJECT_DIR$/projects/where_have_i_been.html" />
         <option value="$PROJECT_DIR$/projects/live_of_code.html" />
-        <option value="$PROJECT_DIR$/projects/scanven.html" />
-        <option value="$PROJECT_DIR$/projects/flowing_time.html" />
         <option value="$PROJECT_DIR$/projects/moments.html" />
         <option value="$PROJECT_DIR$/projects/automaton.html" />
         <option value="$PROJECT_DIR$/projects/aves.html" />
@@ -135,11 +122,13 @@
         <option value="$PROJECT_DIR$/projects/form_from_formulation/sketch.js" />
         <option value="$PROJECT_DIR$/projects/mdx_logo.html" />
         <option value="$PROJECT_DIR$/projects/form_from_formulation.js" />
-        <option value="$PROJECT_DIR$/projects/form_from_formulation.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/projects/welcome_to_IMA_show.html" />
+        <option value="$PROJECT_DIR$/projects/form_from_formulation.html" />
+        <option value="$PROJECT_DIR$/projects/scanven.html" />
+        <option value="$PROJECT_DIR$/projects/flowing_time.html" />
       </list>
     </option>
   </component>
@@ -190,6 +179,13 @@
               <item name="aaaven.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aaaven.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aaaven.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="flowing_time" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aaaven.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -281,12 +277,12 @@
       <workItem from="1523518321839" duration="14107000" />
       <workItem from="1524292239935" duration="24040000" />
       <workItem from="1524549786583" duration="2101000" />
-      <workItem from="1524654484895" duration="40249000" />
+      <workItem from="1524654484895" duration="44195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211721000" />
+    <option name="totallyTimeSpent" value="215667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="992" extended-state="6" />
@@ -458,14 +454,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/model_me.html" />
     <entry file="file://$PROJECT_DIR$/projects/where_have_i_been.html" />
-    <entry file="file://$PROJECT_DIR$/projects/flowing_time.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/aves.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -473,14 +461,6 @@
           <folding>
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/scanven.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -579,25 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/form_from_formulation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="335" column="1" lean-forward="false" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/live_of_code.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -614,6 +575,43 @@
           <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
             <element signature="n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="335" column="1" lean-forward="false" selection-start-line="335" selection-start-column="1" selection-end-line="335" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/form_from_formulation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/scanven.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/flowing_time.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="88" column="31" lean-forward="true" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#section#2;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
