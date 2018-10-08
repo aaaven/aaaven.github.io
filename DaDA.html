@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DaDA: Design and Draw with AI</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<section id="bar">
+    <img src="images/logo.svg" width=180 class="logo">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><span class="tab_highlight">Projects</span></a>
+            </li>
+            <li>
+                <a href="teaching.html"><span>Teaching</span></a>
+            </li>
+            <li>
+                <a href="about.html"><span>About</span></a>
+            </li>
+            <li id="contact_aven">
+                <a data-email="hi@aven.cc" href="mailto:hi@aven.cc"><span>hi@aven.cc</span></a>
+            </li>
+        </ul>
+
+    </nav>
+</section>
+<article>
+    <section class="content">
+        <h1 class="title">DaDA: Design and Draw with AI</h1>
+        <p class="project_time">September 2018</p>
+        <br>
+        <div class="project_lan">
+            Language:
+            <a>Pytorch</a>
+            <a>Node.js</a>
+            <a>P5.js</a>
+        </div>
+        <br>
+        <div class="project_link">
+            <a href="https://github.com/aaaven/dada" target="_blank">Code</a>
+            <a href="https://youtu.be/l7rSpJy2t9I" target="_blank">Video(23")</a>
+            <a href="https://youtu.be/lvXrLqe4_bU" target="_blank">Video(8'17")</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <p class="description">
+          <img src="images/projects/DaDA/Poster_cindy_720p.jpg" width="800">
+          <br><br>
+          "DaDA" is an interactive project explores the possible role of artificial intelligence in (traditionally human oriented) creative processes -- such as drawing and design. A cooperative relation between human and AI in this interactive progress is expected. Human creator not only trains AI with artificial data but also benefits from the assistance of AI. On the other side, artificial intelligence not only learns from human created data but also "teaches" and provides human creator new approaches to expected or unexpected creative goals.
+        </p>
+        <h2 class="subtitle">Introduction</h2>
+        <p class="description">
+            DaDA: Design and Draw with AI, is an interactive installation based on artificial intelligence. When participants scribble lines, the AI will help to create a nature painting or Chinese Shanshui painting; If the participants doodle some colored blocks, the AI will assist to generate design, such as architecture, urban design , etc. After the AI has assisted human in drawing or designing, the artwork created by human (and AI) can also be feed back to train the AI system and explore more.
+            <br><br>
+            As the first attempt, "DaDA" project starts with Shanshui painting -- a Chinese traditional painting art form. <a href = "https://en.wikipedia.org/wiki/Shan_shui">Shanshui</a>, literally means "mountain and water", also known as <a href="https://en.wikipedia.org/wiki/Ink_wash_painting">literati painting</a>, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. "DaDA" is trained with "CycleGAN" published as <a href="https://arxiv.org/pdf/1703.10593.pdf">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</a> on 108 Shanshui paintings collected from online open data. And it's warpped with an web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "DaDA" will assistant to create a Chinese Shanshui painting and present in the display. Here is a demo video recorded when "DaDA" is first presented in public:
+            <br><br>
+            <strong>DaDA:Design and Draw with AI(First Demo with Participants).</strong>
+            <br>
+            <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <br><br>
+            <strong>Hand-sketch vs. Generated Shanshui painting.</strong>
+            <br>
+            <img class="center_img" src="images/projects/DaDA/miki_draw_render.png" width="400">
+        </p>
+    </section>
+
+    <section class="content">
+        <h2 class="subtitle">Documentation</h2>
+        <p class="description">
+            <strong>1. Collect Data.</strong><br>
+            To train "DaDA" on Shanshui painting task, I collected 108 Shanshui painting scans from the <a href="https://theme.npm.edu.tw/">National Palace Musemum</a> <a href="https://theme.npm.edu.tw/opendata/">open data</a>. All are master pieces from ancient Chinese literatis and a list of all paintings used in this project is <a href="https://github.com/aaaven/dada/blob/master/result.json">here</a>:
+            <br><br>
+            <strong>108 Shanshui paintings collection from the National Palace Musemum:</strong>
+            <br>
+            <img src="images/projects/DaDA/dataset_collection_1920.png" width="800">
+            <br><br>
+            <strong>2.Data Processing.</strong><br>
+            Since all the paintings are scanned with frames, serveral computer vision techniques are applied to crop the actual painting out, here is an example explains the process:
+            (Some irregular paintings are manually processed)
+            <br><br>
+            <strong>Binarized --> Erode with kernel a --> </strong>
+            <img class="center_img" src="images/projects/DaDA/crop_frame.png" width="400">
+            <img class="center_img" src="images/projects/DaDA/divide.png" width="400">
+        </p>
+    </section>
+
+    <section class="content">
+        <h2 class="subtitle">Future Development</h2>
+        <p class="description">
+
+        </p>
+
+    </section>
+    <\<iframe width="800" height="450" src="https://www.youtube.com/embed/lvXrLqe4_bU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</article>
+
+<section class="notes">
+    <a href="https://github.com/aaaven/aaaven.github.io" target="_blank">Source code</a> for this website is available
+    on github.
+</section>
+
+</body>
+</html>
