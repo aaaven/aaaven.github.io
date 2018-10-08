@@ -64,13 +64,13 @@
             <br><br>
             As the first attempt, "DaDA" project starts with Shanshui painting -- a Chinese traditional painting art form. <a href = "https://en.wikipedia.org/wiki/Shan_shui" target="_blank">Shanshui</a>, literally means "mountain and water", also known as <a href="https://en.wikipedia.org/wiki/Ink_wash_painting">literati painting</a>, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. "DaDA" is trained with "CycleGAN" published as <a href="https://arxiv.org/pdf/1703.10593.pdf" target="_blank">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</a> on 108 Shanshui paintings collected from online open data. And it's warpped with an web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "DaDA" will assistant to create a Chinese Shanshui painting and present in the display. Here is a demo video recorded when "DaDA" is first presented in public:
             <br><br>
-            <strong>DaDA:Design and Draw with AI(First Demo with Participants).</strong>
+            <strong>DaDA:Design and Draw with AI(First Demo with Participants):</strong>
             <br>
             <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <br><br>
-            <strong>Hand-sketch vs. Generated Shanshui painting.</strong>
+            <strong>Hand-sketch vs. Generated Shanshui painting:</strong>
             <br>
-            <img class="center_img" src="images/projects/DaDA/miki_draw_render.png" width="400">
+            <img class="center_img" src="images/projects/DaDA/miki_draw_render.png" width="800">
         </p>
     </section>
 
@@ -93,10 +93,22 @@
             <br><br>
             <strong>Crop one painting into multiple squares and generate the paired "hand-sketch" data:</strong>
             <img class="center_img" src="images/projects/DaDA/divide.png" width="400">
+            <br><br>
             <strong>3.Train the Shanshui-cycleGAN.</strong><br>
             I trained this Shanshui-cycleGAN on a linux server with 8 GTX 1080Ti graphic cards for around 20 hours. There are very good explainations in how to train and test cycleGAN in its <a href = "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank">offical repo</a>, it's their amazing work and opensource spirit made this project possible. Here is a visulization of <a href="http://aven.cc/images/projects/DaDA/web/index.html" target="_blank">the iteration of Shanshui-cycleGAN</a> in 200 epoches.
-
-
+            <br><br>
+            <strong>4.Wrap up the trained Shanshui-cycleGAN.</strong><br>
+            After tunning and trainning the Shanshui-cycleGAN for serveral times, finally a netwrok that can produce decent artworks is alive! I then wrapped the trained network with a client-server based application. An interface programmed with <a href="https://p5js.org/" target="_blank">P5.js</a> runs on my ipad, it inputs hand-sketch and also displays the genetated output painting; A linux server runs backend in the cloud, the node program on the server handles all the server-client communication and also excutes the machine learning algorithmn commands to generate Shanshui painting.
+            <br><br>
+            <strong>The iPad interface:</strong><br>
+            <img class="center_img" src="images/projects/DaDA/ipad_interface.png" width="800">
+            <br><br>
+            <strong>5.Some results.</strong><br>
+            Here is another longer video demonstrates more participants draw and play with "DaDA", it's interesting to see how people from different cultures understand and draw landscape as well as Shanshui painting.
+            <br><br>
+            <strong>DaDA:Design and Draw with AI(at IMA Potluck):</strong>
+            <br>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/lvXrLqe4_bU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </p>
     </section>
 
@@ -107,7 +119,6 @@
         </p>
 
     </section>
-    <\<iframe width="800" height="450" src="https://www.youtube.com/embed/lvXrLqe4_bU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </article>
 
