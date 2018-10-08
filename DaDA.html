@@ -62,7 +62,7 @@
         <p class="description">
             DaDA: Design and Draw with AI, is an interactive installation based on artificial intelligence. When participants scribble lines, the AI will help to create a nature painting or Chinese Shanshui painting; If the participants doodle some colored blocks, the AI will assist to generate design, such as architecture, urban design , etc. After the AI has assisted human in drawing or designing, the artwork created by human (and AI) can also be feed back to train the AI system and explore more.
             <br><br>
-            As the first attempt, "DaDA" project starts with Shanshui painting -- a Chinese traditional painting art form. <a href = "https://en.wikipedia.org/wiki/Shan_shui">Shanshui</a>, literally means "mountain and water", also known as <a href="https://en.wikipedia.org/wiki/Ink_wash_painting">literati painting</a>, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. "DaDA" is trained with "CycleGAN" published as <a href="https://arxiv.org/pdf/1703.10593.pdf">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</a> on 108 Shanshui paintings collected from online open data. And it's warpped with an web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "DaDA" will assistant to create a Chinese Shanshui painting and present in the display. Here is a demo video recorded when "DaDA" is first presented in public:
+            As the first attempt, "DaDA" project starts with Shanshui painting -- a Chinese traditional painting art form. <a href = "https://en.wikipedia.org/wiki/Shan_shui" target="_blank">Shanshui</a>, literally means "mountain and water", also known as <a href="https://en.wikipedia.org/wiki/Ink_wash_painting">literati painting</a>, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. "DaDA" is trained with "CycleGAN" published as <a href="https://arxiv.org/pdf/1703.10593.pdf" target="_blank">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</a> on 108 Shanshui paintings collected from online open data. And it's warpped with an web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "DaDA" will assistant to create a Chinese Shanshui painting and present in the display. Here is a demo video recorded when "DaDA" is first presented in public:
             <br><br>
             <strong>DaDA:Design and Draw with AI(First Demo with Participants).</strong>
             <br>
@@ -77,20 +77,26 @@
     <section class="content">
         <h2 class="subtitle">Documentation</h2>
         <p class="description">
-            <strong>1. Collect Data.</strong><br>
-            To train "DaDA" on Shanshui painting task, I collected 108 Shanshui painting scans from the <a href="https://theme.npm.edu.tw/">National Palace Musemum</a> <a href="https://theme.npm.edu.tw/opendata/">open data</a>. All are master pieces from ancient Chinese literatis and a list of all paintings used in this project is <a href="https://github.com/aaaven/dada/blob/master/result.json">here</a>:
+            <strong>1.Dataset.</strong><br>
+            To train "DaDA" on Shanshui painting task, I collected 108 Shanshui painting from the <a href="https://theme.npm.edu.tw/" target="_blank">National Palace Musemum</a> <a href="https://theme.npm.edu.tw/opendata/" target="_blank">open data</a>. All are master pieces from ancient Chinese literatis and a list of all paintings used in this project is <a href="https://github.com/aaaven/dada/blob/master/result.json" target="_blank">here</a>:
             <br><br>
             <strong>108 Shanshui paintings collection from the National Palace Musemum:</strong>
             <br>
             <img src="images/projects/DaDA/dataset_collection_1920.png" width="800">
             <br><br>
             <strong>2.Data Processing.</strong><br>
-            Since all the paintings are scanned with frames, serveral computer vision techniques are applied to crop the actual painting out, here is an example explains the process:
-            (Some irregular paintings are manually processed)
+            All the paintings collected are with frames, I applied serveral computer vision techniques to crop the actual painting out, here is an example explains the process (Some irregular paintings are manually processed).
             <br><br>
-            <strong>Binarized --> Erode with kernel a --> </strong>
+            <strong>Binarize --> Erode with kernel a --> Dialate with kernel b --> Erode with kernel b --> Crop the marked area:</strong>
             <img class="center_img" src="images/projects/DaDA/crop_frame.png" width="400">
+            Shanshui painting varies in aspect ratios, and the long scrolls can be either horizontal or vertical. But the input tranning data are supposed to be the same size, thus I cropped all the paintings into small squares to both uniform the aspect ration and obtain same input size. And I used a canny filter to generate the edge as the "hand-sketch" data. 1230 pairs of data are generated through this process.
+            <br><br>
+            <strong>Crop one painting into multiple squares and generate the paired "hand-sketch" data:</strong>
             <img class="center_img" src="images/projects/DaDA/divide.png" width="400">
+            <strong>3.Train the Shanshui-cycleGAN.</strong><br>
+            I trained this Shanshui-cycleGAN on a linux server with 8 GTX 1080Ti graphic cards for around 20 hours. There are very good explainations in how to train and test cycleGAN in its <a href = "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank">offical repo</a>, it's their amazing work and opensource spirit made this project possible. Here is a visulization of <a href="http://aven.cc/images/projects/DaDA/web/index.html" target="_blank">the iteration of Shanshui-cycleGAN</a> in 200 epoches.
+
+
         </p>
     </section>
 
