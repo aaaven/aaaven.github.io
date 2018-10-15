@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shanshui-DaDA</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<section id="bar">
+    <img src="images/logo.svg" width=180 class="logo">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><span class="tab_highlight">Projects</span></a>
+            </li>
+            <li>
+                <a href="teaching.html"><span>Teaching</span></a>
+            </li>
+            <li>
+                <a href="about.html"><span>About</span></a>
+            </li>
+            <li id="contact_aven">
+                <a data-email="hi@aven.cc" href="mailto:hi@aven.cc"><span>hi@aven.cc</span></a>
+            </li>
+        </ul>
+
+    </nav>
+</section>
+<article>
+    <section class="content">
+        <h1 class="title">Shanshui-DaDA</h1>
+        <p class="project_time">October 2018</p>
+        <br>
+        <div class="project_lan">
+            Language:
+            <a>Pytorch</a>
+            <a>Node.js</a>
+            <a>P5.js</a>
+        </div>
+        <br>
+        <div class="project_link">
+            <a href="https://github.com/aaaven/dada" target="_blank">Code</a>
+            <a href="https://youtu.be/l7rSpJy2t9I" target="_blank">Video(23")</a>
+            <a href="https://youtu.be/lvXrLqe4_bU" target="_blank">Video(8'17")</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <p class="description">
+          <img src="images/projects/Shanshui-DaDA/Poster_cindy_720p.jpg" width="800">
+          <br><br>
+          “Shanshui-DaDA” is an interactive installation based on artificial intelligence. When participants scribble lines and sketch the landscape, the AI will help to create a Chinese Shanshui painting.
+        </p>
+        <h2 class="subtitle">Introduction</h2>
+        <p class="description">
+            "Shanshui-DaDA" is trained with "CycleGAN" and wrapped with a web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "Shanshui-DaDA" will assistant to create a Chinese Shanshui painting and present in the display. Here is a demo video recorded when "Shanshui-DaDA" is first presented in public:
+            <br><br>
+            <strong>Shanshui-DaDA(First Demo with Participants):</strong>
+            <br>
+            <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <br><br>
+            “Shanshui” literally means "mountain and water", also known as literati painting, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. As a key element of what Chinese calls literati arts — or amateur arts of the scholars, Shanshui painting used to be along with their education, the Chinese scholars were all trained in this forms of fine arts. This art form is, in a long history, an essential part of the spiritual life of the entire community of ancient Chinese intellectuals. But the tradition is vanishing. "DaDA" refers to “Design and Draw with AI”, explains the goal of exploring the possible role of artificial intelligence in (traditionally human-oriented) creative processes -- such as drawing and design. And the artificial intelligence - "Shanshui-DaDA" will enhance modern Chinese people again with the ability to use Shanshui painting as an expressive medium and to enrich their spiritual life.
+        </p>
+    </section>
+
+    <section class="content">
+        <h2 class="subtitle">Documentation</h2>
+        <p class="description">
+            "Shanshui-DaDA" is trained with "CycleGAN" on 108 Shanshui paintings collected from online open data. And the trained machine learning model is then  wrapped with a client-sever system, where participants can sketch on and later see the real-time generated paintings on the front interface - my iPad 2018. And a node server and the machine learning model are all running on a cloud base linux server.
+            <br><br>
+            <strong>1.Dataset.</strong><br>
+            To train "Shanshui-DaDA" on Shanshui painting task, I collected 108 Shanshui painting from the <a href="https://theme.npm.edu.tw/" target="_blank">National Palace Museum</a> <a href="https://theme.npm.edu.tw/opendata/" target="_blank">open data</a>. All are masterpieces from ancient Chinese literati and a list of all paintings used in this project is <a href="https://github.com/aaaven/dada/blob/master/result.json" target="_blank">here</a>:
+            <br><br>
+            <strong>108 Shanshui paintings collection from the National Palace Museum:</strong>
+            <br>
+            <img src="images/projects/Shanshui-DaDA/dataset_collection_1920.png" width="800">
+            <br><br>
+            <strong>2.Data Processing.</strong><br>
+            All the paintings collected are with frames, I applied several computer vision techniques to crop the actual painting out, here is an example explains the process (Some irregular paintings are manually processed).
+            <br><br>
+            <strong>Binarize --> Erode with kernel a --> Dilate with kernel b --> Erode with kernel b --> Crop the marked area:</strong>
+            <img class="center_img" src="images/projects/Shanshui-DaDA/crop_frame.png" width="400">
+            Shanshui painting varies in aspect ratios, and the long scrolls can be either horizontal or vertical. But the input training data are supposed to be the same size, thus I cropped all the paintings into small squares to both uniform the aspect ration and obtain the same input size. And I used a canny filter to generate the edge as the "hand-sketch" data. 1230 pairs of data are generated through this process.
+            <br><br>
+            <strong>Crop one painting into multiple squares and generate the paired "hand-sketch" data:</strong>
+            <img class="center_img" src="images/projects/Shanshui-DaDA/divide.png" width="400">
+            <br><br>
+            <strong>3.Train the Shanshui-cycleGAN.</strong><br>
+            I trained this Shanshui-cycleGAN on a Linux server with 8 GTX 1080Ti graphics cards for around 20 hours. There are very good explanations in how to train and test cycleGAN in its <a href = "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank">official repo</a>, it's their amazing work and opensource spirit made this project possible. Here is a visualization of <a href="http://aven.cc/images/projects/Shanshui-DaDA/web/index.html" target="_blank">the iteration of Shanshui-DaDA</a> in 200 epochs.
+            <br><br>
+            <strong>4. Wrap up the trained Shanshui-cycleGAN.</strong><br>
+            After tunning and training the Shanshui-cycleGAN several times, finally a network that can produce decent artworks is alive! I then wrapped the trained network with a client-server based application. An interface programmed with <a href="https://p5js.org/" target="_blank">P5.js</a> runs on my iPad, it inputs hand-sketch and also displays the generated output painting; A Linux server runs backend in the cloud, the node program on the server handles all the server-client communication and also executes the machine learning algorithm commands to generate Shanshui painting.
+            <br><br>
+            <strong>The iPad interface:</strong><br>
+            <img class="center_img" src="images/projects/Shanshui-DaDA/ipad_interface.png" width="800">
+            <br><br>
+            <strong>5.Some results.</strong><br>
+            Here is another longer video demonstrates more participants draw and play with "DaDA", it's interesting to see how people from different cultures understand and draw landscape as well as Shanshui painting.
+            <br><br>
+            <strong>DaDA: Design and Draw with AI(at IMA Potluck, NYU Shanghai):</strong>
+            <br>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/lvXrLqe4_bU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </p>
+    </section>
+
+    <section class="content">
+        <h2 class="subtitle">Acknowledgement</h2>
+        <p class="description">
+            There are many previous works inspired and contributed to this project.
+            <br>
+            <strong>1.cycleGAN: </strong><a href = "https://arxiv.org/pdf/1703.10593.pdf" target="_blank">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.</a>
+            <br>
+            This is the essential machine learning algorithm/software used in this project. It's also their <a href = "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">open-source project</a> made it easy to train and test the machine learning model.
+            <br>
+            <strong>2.<a href = "https://opendot.github.io/ml4a-invisible-cities/">Invisible City.</a></strong>
+            <br>
+            This project provides me the idea of using a client-server system to implement the interactive idea, as well as to set it up with an iPad and cloud base linux server.
+            <br>
+            <strong>3.<a href="https://theme.npm.edu.tw/opendata/" target="_blank">The National Palace Museum Open Data</a>.</strong>
+            <br>
+            All Data to train "Shanshui-DaDA" is from here.
+            <br>
+    </section>
+</article>
+
+<section class="notes">
+    <a href="https://github.com/aaaven/aaaven.github.io" target="_blank">Source code</a> for this website is available
+    on github.
+</section>
+
+</body>
+</html>
