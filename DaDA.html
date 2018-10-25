@@ -37,88 +37,45 @@
     <section class="content">
         <h1 class="title">DaDA: Design and Draw with AI</h1>
         <p class="project_time">September 2018</p>
-        <br>
-        <div class="project_lan">
-            Language:
-            <a>Pytorch</a>
-            <a>Node.js</a>
-            <a>P5.js</a>
-        </div>
-        <br>
-        <div class="project_link">
-            <a href="https://github.com/aaaven/dada" target="_blank">Code</a>
-            <a href="https://youtu.be/l7rSpJy2t9I" target="_blank">Video(23")</a>
-            <a href="https://youtu.be/lvXrLqe4_bU" target="_blank">Video(8'17")</a>
-        </div>
     </section>
 
     <section class="content">
         <p class="description">
           <img src="images/projects/DaDA/Poster_cindy_720p.jpg" width="800">
           <br><br>
-          "DaDA" is an interactive project explores the possible role of artificial intelligence in (traditionally human-oriented) creative processes -- such as drawing and design. A cooperative relationship between human and AI in this interactive progress is expected. Human creator not only trains AI with artificial data but also benefits from the assistance of AI. On the other side, artificial intelligence not only learns from human-created data but also "teaches" and provides human creator new approaches to expected or unexpected creative goals.
-        </p>
-        <h2 class="subtitle">Introduction</h2>
-        <p class="description">
-            DaDA: Design and Draw with AI, is an interactive installation based on artificial intelligence. When participants scribble lines, the AI will help to create a nature painting or Chinese Shanshui painting; If the participants doodle some colored blocks, the AI will assist to generate design, such as architecture, urban design , etc. After the AI has assisted human in drawing or designing, the artwork created by the human (and AI) can also be feedback to train the AI system and explore more.
-            <br><br>
-            As the first attempt, "DaDA" project starts with Shanshui painting -- a Chinese traditional painting art form. <a href = "https://en.wikipedia.org/wiki/Shan_shui" target="_blank">Shanshui</a> literally means "mountain and water", also known as <a href="https://en.wikipedia.org/wiki/Ink_wash_painting">literati painting</a>, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. "DaDA" is trained with "CycleGAN" published as <a href="https://arxiv.org/pdf/1703.10593.pdf" target="_blank">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</a> on 108 Shanshui paintings collected from online open data. And it's wrapped with a web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "DaDA" will assistant to create a Chinese Shanshui painting and present in the display. Here is a demo video recorded when "DaDA" is first presented in public:
-            <br><br>
-            <strong>DaDA: Design and Draw with AI(First Demo with Participants):</strong>
-            <br>
-            <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <br><br>
-            <strong>Hand-sketch vs. Generated Shanshui painting:</strong>
-            <br>
-            <img class="center_img" src="images/projects/DaDA/miki_draw_render.png" width="800">
+          "DaDA" is an ambitious individual research and practice plan. It will be a series of interactive, generative projects explores the possible role of artificial intelligence in (traditionally human-oriented) creative processes -- such as drawing and design. A cooperative relationship between human and AI in this interactive progress is expected. Human creator not only trains AI with artificial data but also benefits from the assistance of AI. On the other side, artificial intelligence not only learns from human-created data but also "teaches" and provides human creator new approaches to expected or unexpected creative goals.
         </p>
     </section>
 
     <section class="content">
-        <h2 class="subtitle">Documentation</h2>
+        <h2 class="subtitle">Projects Intro</h2>
+        <h3>01. Shanshui-DaDA</h3>
         <p class="description">
-            <strong>1.Dataset.</strong><br>
-            To train "DaDA" on Shanshui painting task, I collected 108 Shanshui painting from the <a href="https://theme.npm.edu.tw/" target="_blank">National Palace Museum</a> <a href="https://theme.npm.edu.tw/opendata/" target="_blank">open data</a>. All are masterpieces from ancient Chinese literati and a list of all paintings used in this project is <a href="https://github.com/aaaven/dada/blob/master/result.json" target="_blank">here</a>:
-            <br><br>
-            <strong>108 Shanshui paintings collection from the National Palace Museum:</strong>
-            <br>
-            <img src="images/projects/DaDA/dataset_collection_1920.png" width="800">
-            <br><br>
-            <strong>2.Data Processing.</strong><br>
-            All the paintings collected are with frames, I applied several computer vision techniques to crop the actual painting out, here is an example explains the process (Some irregular paintings are manually processed).
-            <br><br>
-            <strong>Binarize --> Erode with kernel a --> Dilate with kernel b --> Erode with kernel b --> Crop the marked area:</strong>
-            <img class="center_img" src="images/projects/DaDA/crop_frame.png" width="400">
-            Shanshui painting varies in aspect ratios, and the long scrolls can be either horizontal or vertical. But the input training data are supposed to be the same size, thus I cropped all the paintings into small squares to both uniform the aspect ration and obtain the same input size. And I used a canny filter to generate the edge as the "hand-sketch" data. 1230 pairs of data are generated through this process.
-            <br><br>
-            <strong>Crop one painting into multiple squares and generate the paired "hand-sketch" data:</strong>
-            <img class="center_img" src="images/projects/DaDA/divide.png" width="400">
-            <br><br>
-            <strong>3.Train the Shanshui-cycleGAN.</strong><br>
-            I trained this Shanshui-cycleGAN on a Linux server with 8 GTX 1080Ti graphics cards for around 20 hours. There are very good explanations in how to train and test cycleGAN in its <a href = "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank">official repo</a>, it's their amazing work and opensource spirit made this project possible. Here is a visualization of <a href="http://aven.cc/images/projects/DaDA/web/index.html" target="_blank">the iteration of Shanshui-cycleGAN</a> in 200 epochs.
-            <br><br>
-            <strong>4. Wrap up the trained Shanshui-cycleGAN.</strong><br>
-            After tunning and training the Shanshui-cycleGAN several times, finally a network that can produce decent artworks is alive! I then wrapped the trained network with a client-server based application. An interface programmed with <a href="https://p5js.org/" target="_blank">P5.js</a> runs on my iPad, it inputs hand-sketch and also displays the generated output painting; A Linux server runs backend in the cloud, the node program on the server handles all the server-client communication and also executes the machine learning algorithm commands to generate Shanshui painting.
-            <br><br>
-            <strong>The iPad interface:</strong><br>
-            <img class="center_img" src="images/projects/DaDA/ipad_interface.png" width="800">
-            <br><br>
-            <strong>5.Some results.</strong><br>
-            Here is another longer video demonstrates more participants draw and play with "DaDA", it's interesting to see how people from different cultures understand and draw landscape as well as Shanshui painting.
-            <br><br>
-            <strong>DaDA: Design and Draw with AI(at IMA Potluck, NYU Shanghai):</strong>
-            <br>
-            <iframe width="800" height="450" src="https://www.youtube.com/embed/lvXrLqe4_bU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          As the first attempt, "DaDA" plan starts with Shanshui painting -- a Chinese traditional painting art form. <a href = "https://en.wikipedia.org/wiki/Shan_shui" target="_blank">Shanshui</a> literally means "mountain and water", also known as <a href="https://en.wikipedia.org/wiki/Ink_wash_painting">literati painting</a>, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. "DaDA" is trained with "CycleGAN" published as <a href="https://arxiv.org/pdf/1703.10593.pdf" target="_blank">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</a> on 108 Shanshui paintings collected from online open data. And it's wrapped with a web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "DaDA" will assistant to create a Chinese Shanshui painting and present in the display. Here is a demo video recorded when "DaDA" is first presented in public:
+          <br><br>
+          <strong>Shanshui-DaDA(First Demo with Participants):</strong>
+          <br>
+          <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <br><br>
+          <strong>Hand-sketch vs. Generated Shanshui painting:</strong>
+          <br>
+          <img class="center_img" src="images/projects/DaDA/miki_draw_render.png" width="800">
+          <br><br>
+          More can be found <a href = 'Shanshui-DaDA.html'>here</a>
         </p>
+
+        <h3>02. Archi-DaDA</h3>
+        <p class="description">
+          The second "DaDA" project is an architecture design project.
+          <br>
     </section>
 
-    <section class="content">
+    <!-- <section class="content">
         <h2 class="subtitle">Future Development</h2>
         <p class="description">
           This interactive installation will be set up at <a href="http://www.makercarnival.org/">Shanghai Maker Carnival</a> and open to all participants. The most important goal is, of course, to bring "DaDA" into human participants' artwork-creating process so to enjoy the fun of creating with AI! Another side effect will be the generation of more "human-flavor" hand-sketch data. "DaDA" is originally trained by masterpieces along with computer-generated edges(as hand-sketches), which works fine but there are still more to explore. Thanks to cycleGAN's unique feature and ability to work with unpaired data, "DaDA" can be trained again with the generated data and evolves, explores more.
         </p>
-
-    </section>
+    </section> -->
 
 </article>
 
