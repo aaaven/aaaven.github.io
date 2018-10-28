@@ -55,19 +55,38 @@
     <section class="content">
         <p class="description">
           <img src="images/projects/Shanshui-DaDA/Poster_cindy_720p.jpg" width="800">
+          <img src="images/projects/Shanshui-DaDA/1920_collection_0.jpg" width="800">
           <br><br>
           “Shanshui-DaDA” is an interactive installation based on artificial intelligence. When participants scribble lines and sketch the landscape, the AI will help to create a Chinese Shanshui painting.
+          <br><br>
+          Here is a short documentation video:
+          <br>
+          <iframe class="youtube" width="800" height="450" src=""></iframe>
         </p>
         <h2 class="subtitle">Introduction</h2>
         <p class="description">
-            "Shanshui-DaDA" is trained with "CycleGAN" and wrapped with a web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "Shanshui-DaDA" will assistant to create a Chinese Shanshui painting and present in the display. Here is a demo video recorded when "Shanshui-DaDA" is first presented in public:
-            <br><br>
-            <strong>Shanshui-DaDA(First Demo with Participants):</strong>
+            "Shanshui-DaDA" is trained with "CycleGAN" and wrapped with a web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "Shanshui-DaDA" will assistant to create a Chinese Shanshui painting and present in the display. 
+            <!-- <strong>Shanshui-DaDA(First Demo with Participants):</strong>
             <br>
-            <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
             <br><br>
-            “Shanshui” literally means "mountain and water", also known as literati painting, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. As a key element of what Chinese calls literati arts — or amateur arts of the scholars, Shanshui painting used to be along with their education, the Chinese scholars were all trained in this forms of fine arts. This art form is, in a long history, an essential part of the spiritual life of the entire community of ancient Chinese intellectuals. But the tradition is vanishing. "DaDA" refers to “Design and Draw with AI”, explains the goal of exploring the possible role of artificial intelligence in (traditionally human-oriented) creative processes -- such as drawing and design. And the artificial intelligence - "Shanshui-DaDA" will enhance modern Chinese people again with the ability to use Shanshui painting as an expressive medium and to enrich their spiritual life.
+            “Shanshui” literally means "mountain and water", also known as literati painting, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. As a key element of what Chinese calls literati arts — or amateur arts of the scholars, Shanshui painting used to be along with their education, the Chinese scholars were all trained in this forms of fine arts. This art form is, in a long history, an essential part of the spiritual life of the entire community of ancient Chinese intellectuals. But the tradition is vanishing. "DaDA" refers to “Design and Draw with AI”, explains the goal of exploring the possible role of artificial intelligence in (traditionally human-oriented) creative processes -- such as drawing and design. I choose “Shanshui” - this unique eastern traditional art form to train “Shanshui-DaDA”,  commit to enhance modern people, especially those have grown up in eastern culture, with the ability to easily use “Shanshui” as an expressive medium and to enrich their spiritual life.
+            <br><br>
+            Here is a collection of some generated "Shanshui" co-created by participants and "Shanshui-DaDA":
+            <br>
+            <strong>Shanshui co-created by Participants and Shanshui-DaDA:</strong>
+            <br>
+            <img src="images/projects/Shanshui-DaDA/demo_result.png" width="800">
         </p>
+        <h2 class="subtitle">Generated "Shanshui" Collection.</h2>
+        <p class="description">
+            With the 24 selected "Shanshui" co-created by participants and Shanshui-DaDA, I handcrafted this Shanshui collection book with my girlfriend's help. Two of us spent eight hours on this, which is kind of interesting. The arttificial intelligence is more on the creative side during the production of the painting collection, while two human labor handcrafted the physical copy. The book follows the traditional "Shanshui" collection design- "CeYe" which usually uses to present small scale (comparing to scrolls) "Shanshui". 
+            <br><br>
+            <img src="images/projects/Shanshui-DaDA/1920_collection_1.jpg" width="800">
+            <img src="images/projects/Shanshui-DaDA/1920_collection_2.jpg" width="800">
+            <img src="images/projects/Shanshui-DaDA/1920_collection_3.jpg" width="800">
+        </p>
+        
     </section>
 
     <section class="content">
@@ -93,7 +112,7 @@
             <img class="center_img" src="images/projects/Shanshui-DaDA/divide.png" width="400">
             <br><br>
             <strong>3.Train the Shanshui-cycleGAN.</strong><br>
-            I trained this Shanshui-cycleGAN on a Linux server with 8 GTX 1080Ti graphics cards for around 20 hours. There are very good explanations in how to train and test cycleGAN in its <a href = "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank">official repo</a>, it's their amazing work and opensource spirit made this project possible. Here is a visualization of <a href="http://aven.cc/images/projects/Shanshui-DaDA/web/index.html" target="_blank">the iteration of Shanshui-DaDA</a> in 200 epochs.
+            I trained this Shanshui-cycleGAN on a Linux server with 8 GTX 1080Ti graphics cards for around 20 hours. There are very good explanations in how to train and test cycleGAN in its <a href = "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank">official repo</a>, it's their amazing work and opensource spirit made this project possible. Here is a visualization of <a href="http://www.aven.cc/images/projects/Shanshui-DaDA/web/index.html" target="_blank">the iteration of Shanshui-DaDA</a> in 200 epochs.
             <br><br>
             <strong>4. Wrap up the trained Shanshui-cycleGAN.</strong><br>
             After tunning and training the Shanshui-cycleGAN several times, finally a network that can produce decent artworks is alive! I then wrapped the trained network with a client-server based application. An interface programmed with <a href="https://p5js.org/" target="_blank">P5.js</a> runs on my iPad, it inputs hand-sketch and also displays the generated output painting; A Linux server runs backend in the cloud, the node program on the server handles all the server-client communication and also executes the machine learning algorithm commands to generate Shanshui painting.
@@ -102,9 +121,13 @@
             <img class="center_img" src="images/projects/Shanshui-DaDA/ipad_interface.png" width="800">
             <br><br>
             <strong>5.Some results.</strong><br>
+            <strong>Shanshui-DaDA(First Demo with Participants):</strong>
+            <br>
+            <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <br><br>
             Here is another longer video demonstrates more participants draw and play with "DaDA", it's interesting to see how people from different cultures understand and draw landscape as well as Shanshui painting.
             <br><br>
-            <strong>DaDA: Design and Draw with AI(at IMA Potluck, NYU Shanghai):</strong>
+            <strong>Shanshui-DaDA at IMA Potluck, NYU Shanghai:</strong>
             <br>
             <iframe width="800" height="450" src="https://www.youtube.com/embed/lvXrLqe4_bU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </p>
@@ -121,12 +144,15 @@
             <br>
             <strong>2.<a href = "https://opendot.github.io/ml4a-invisible-cities/">Invisible City.</a></strong>
             <br>
-            This project provides me the idea of using a client-server system to implement the interactive idea, as well as to set it up with an iPad and cloud base linux server.
+            This project inspired me the idea of using a client-server system to implement the interactive format, as well as to set it up with an iPad and cloud base linux server. The backend node.js code in my project also benifited much from this project.
             <br>
             <strong>3.<a href="https://theme.npm.edu.tw/opendata/" target="_blank">The National Palace Museum Open Data</a>.</strong>
             <br>
-            All Data to train "Shanshui-DaDA" is from here.
+            All Data to train "Shanshui-DaDA" is from here. 
             <br>
+            <strong>4.Video Credits.</strong>
+            <br>
+            Thanks my friend and co-worker <a href = "www.cindyyhu.com" target="_blank">Cindy</a> on the video shooting and editing.
     </section>
 </article>
 
