@@ -365,11 +365,6 @@ p >a{
     background: #ffee00;
 }
 
-li >a{
-    /*text-decoration: none;*/
-    /*color: dimgray;*/
-    background: #ffee00;
-}
 
 canvas {
     vertical-align: top;
