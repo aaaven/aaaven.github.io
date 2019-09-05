@@ -185,7 +185,9 @@ h1, h2, h3, h4, h5, h6 {
 .content{
     margin:45px 0 0 0;
     width: 860px;
+    /* float: right; */
 }
+
 
 .statement{
     margin: 0 120px 20px 20px;
@@ -359,7 +361,7 @@ img {
   border-radius: 5px;
 } */
 
-p >a{
+p>a{
     /*text-decoration: none;*/
     /*color: dimgray;*/
     background: #ffee00;
@@ -369,3 +371,4 @@ p >a{
 canvas {
     vertical-align: top;
 }
+
