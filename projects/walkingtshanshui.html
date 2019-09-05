@@ -65,7 +65,11 @@
             <br><br>
             <img class="center_img" src="../images/projects/walkingtshanshui/participant.png" width="800">
             <br><br>
-            The tracking system was programmed with a client-side JavaScript library called p5.js and it queries the Sketch-to-Shanshui API with a sketch input. The back-end generates a painting and posts to the front-end. The client-server system performs locally, and no network problem is required.
+            The tracking system consists of a webcam and a custom color tracking algorithm. Mounted to the ceiling and face towards the floor, the camera captures the top view of the entire interactive zone, which is a $2.1 \times 2.1$ meter space covered by a gray carpet. When a participant puts on the yellow hat and steps in, the system tracks the location.
+            <br><br>
+            <img class="center_img" src="../images/projects/walkingtshanshui/tracking.png" width="800">
+            <br><br>
+            The system detects the human participant's position with real-time webcam monitoring, and switches between tracking and generating mode. When the participant steps into the interactive space, the tracking system will be activated and record her or his position history. At the moment the participant walks out, the AI system will be triggered and invoke the generative machine learning model to process the sketch. The Sketch-to-Shanshui translation algorithm generates a realistic Shanshui painting from the sketch input. The generated painting displays on the TV and presents to audiences in real-time.
             <br><br>
             <img class="center_img" src="../images/projects/walkingtshanshui/diagram.png" width="800">
             <br><br>
