@@ -372,3 +372,27 @@ canvas {
     vertical-align: top;
 }
 
+
+@media only screen and (max-device-width : 1024px) {
+    .tab_highlight{
+        font-weight: lighter;
+        font-size: 3vw;
+    }
+    
+    /*project info page*/
+    .title{
+        font-size: 6vw;
+    }
+    
+    .subtitle{
+        font-size: 4vw;
+    }
+    
+    .description{
+        width: 800px;
+        text-align: justify;
+        font-size: 3vw;
+        line-height: 4.5vw;
+    
+    }
+}
