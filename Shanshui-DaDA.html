@@ -54,22 +54,20 @@
 
     <section class="content">
         <p class="description">
-          <img src="images/projects/Shanshui-DaDA/Poster_cindy_720p.jpg" width="800">
-          <img src="images/projects/Shanshui-DaDA/1920_collection_0.jpg" width="800">
-          <br><br>
-          “Shanshui-DaDA” is an interactive installation based on artificial intelligence. When participants scribble lines and sketch the landscape, the AI will help to create a Chinese Shanshui painting.
-          <br><br>
-          Here is a short documentation video:
-          <br>
           <iframe src="https://player.vimeo.com/video/305236841" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          <!-- <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/-R9aSd2h8JA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          <br><br>
+          <img src="images/projects/Shanshui-DaDA/1920_collection_1.jpg" width="800">
+          <!-- <img src="images/projects/Shanshui-DaDA/Poster_cindy_720p.jpg" width="800"> -->
+          <!-- <img src="images/projects/Shanshui-DaDA/1920_collection_0.jpg" width="800"> -->
+          <br><br>
+          “Shanshui-DaDA” is an interactive installation based on artificial intelligence. When participants scribble lines and sketch the landscape, the AI will help to create a Chinese Shanshui painting. "Shanshui-DaDA" is trained GAN model wrapped with a web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "Shanshui-DaDA" will assistant to create a Chinese Shanshui painting and present in the display. 
         </p>
         <h2 class="subtitle">Introduction</h2>
         <p class="description">
-            "Shanshui-DaDA" is trained with "CycleGAN" and wrapped with a web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "Shanshui-DaDA" will assistant to create a Chinese Shanshui painting and present in the display. 
             <!-- <strong>Shanshui-DaDA(First Demo with Participants):</strong>
             <br>
             <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+            <img src="images/projects/Shanshui-DaDA/dataset_collection_1920.png" width="800">
             <br><br>
             “Shanshui” literally means "mountain and water", also known as literati painting, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. As a key element of what Chinese calls literati arts — or amateur arts of the scholars, Shanshui painting used to be along with their education, the Chinese scholars were all trained in this forms of fine arts. This art form is, in a long history, an essential part of the spiritual life of the entire community of ancient Chinese intellectuals. But the tradition is vanishing. "DaDA" refers to “Design and Draw with AI”, explains the goal of exploring the possible role of artificial intelligence in (traditionally human-oriented) creative processes -- such as drawing and design. I choose “Shanshui” - this unique eastern traditional art form to train “Shanshui-DaDA”,  commit to enhance modern people, especially those have grown up in eastern culture, with the ability to easily use “Shanshui” as an expressive medium and to enrich their spiritual life.
         </p>
@@ -77,20 +75,18 @@
         <p class="description">
             With the 24 selected "Shanshui" co-created by participants and Shanshui-DaDA, I handcrafted this Shanshui collection book with my girlfriend's help. Two of us spent eight hours on this, which is kind of interesting. The arttificial intelligence is more on the creative side during the production of the painting collection, while two human labor handcrafted the physical copy. The book followed the traditional "Shanshui" collection design- "CeYe" which usually uses to present small scale (comparing to scrolls) "Shanshui". 
             <br><br>
-            <img src="images/projects/Shanshui-DaDA/1920_collection_1.jpg" width="800">
             <img src="images/projects/Shanshui-DaDA/1920_collection_2.jpg" width="800">
             <img src="images/projects/Shanshui-DaDA/1920_collection_3.jpg" width="800">
             <br><br>
-            Here is the digital copy of generated "Shanshui" used in the book:
+            A digital copy of generated "Shanshui" used in the book:
             <br>
             <strong>Shanshui co-created by Participants and Shanshui-DaDA:</strong>
             <br>
             <img src="images/projects/Shanshui-DaDA/demo_result.png" width="800">
         </p>
-        
     </section>
 
-    <section class="content">
+    <!-- <section class="content">
         <h2 class="subtitle">Documentation</h2>
         <p class="description">
             "Shanshui-DaDA" is trained with "CycleGAN" on 108 Shanshui paintings collected from online open data. And the trained machine learning model is then  wrapped with a client-sever system, where participants can sketch on and later see the real-time generated paintings on the front interface - my iPad 2018. And a node server and the machine learning model are all running on a cloud base linux server.
@@ -105,7 +101,7 @@
             <strong>2.Data Processing.</strong><br>
             All the paintings collected are with frames, I applied several computer vision techniques to crop the actual painting out, here is an example explains the process (Some irregular paintings are manually processed).
             <br><br>
-            <strong>Binarize --> Erode with kernel a --> Dilate with kernel b --> Erode with kernel b --> Crop the marked area:</strong>
+            <strong>Binarize -> Erode with kernel a -> Dilate with kernel b -> Erode with kernel b -> Crop the marked area:</strong>
             <img class="center_img" src="images/projects/Shanshui-DaDA/crop_frame.png" width="400">
             Shanshui painting varies in aspect ratios, and the long scrolls can be either horizontal or vertical. But the input training data are supposed to be the same size, thus I cropped all the paintings into small squares to both uniform the aspect ration and obtain the same input size. And I used a canny filter to generate the edge as the "hand-sketch" data. 1230 pairs of data are generated through this process.
             <br><br>
@@ -154,7 +150,7 @@
             <strong>4.Video Credits.</strong>
             <br>
             Thanks my friend and co-worker <a href = "https://www.cindyyhu.com" target="_blank">Cindy</a> on the video shooting and editing. Background music credit to <a href="https://soundcloud.com/ceezhure/04-gu-zheng-clan">Ceezhure</a> on sound cloud.
-    </section>
+    </section> -->
 </article>
 
 <section class="notes">
