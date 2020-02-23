@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aven:: Chinese New Literati</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<section id="bar">
+    <img src="images/logo.svg" width=180 class="logo">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><span class="tab_highlight">Projects</span></a>
+            </li>
+            <li>
+                <a href="teaching.html"><span>Teaching</span></a>
+            </li>
+            <li>
+                <a href="about.html"><span>About</span></a>
+            </li>
+            <li id="contact_aven">
+                <a data-email="hi@aven.cc" href="mailto:hi@aven.cc"><span>hi@aven.cc</span></a>
+            </li>
+        </ul>
+
+    </nav>
+</section>
+<article>
+    <section class="content">
+        <h1 class="title">DaDA: Design and Draw with AI</h1>
+        <p class="project_time">September 2018</p>
+    </section>
+
+    <section class="content">
+        <p class="description">
+          <img src="images/projects/DaDA/Poster_cindy_720p.jpg" width="800">
+          <br><br>
+          "DaDA" is an ambitious individual research and practice plan. It will be a series of interactive, generative projects explores the possible role of artificial intelligence in (traditionally human-oriented) creative processes -- such as drawing and design. A cooperative relationship between human and AI in this interactive progress is expected. Human creator not only trains AI with artificial data but also benefits from the assistance of AI. On the other side, artificial intelligence not only learns from human-created data but also "teaches" and provides human creator new approaches to expected or unexpected creative goals.
+        </p>
+    </section>
+
+    <section class="content">
+        <h2 class="subtitle">Projects Intro</h2>
+        <h3>01. Shanshui-DaDA</h3>
+        <p class="description">
+          As the first attempt, "DaDA" plan starts with Shanshui painting -- a Chinese traditional painting art form. <a href = "https://en.wikipedia.org/wiki/Shan_shui" target="_blank">Shanshui</a> literally means "mountain and water", also known as <a href="https://en.wikipedia.org/wiki/Ink_wash_painting">literati painting</a>, it's is an East Asian type of brush painting of Chinese origin that uses ink and involves natural landscape. "DaDA" is trained with "CycleGAN" published as <a href="https://arxiv.org/pdf/1703.10593.pdf" target="_blank">Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks</a> on 108 Shanshui paintings collected from online open data. And it's wrapped with a web-based interface, where participants can sketch on and later see the real-time generated paintings. If the participant sketches the landscape in his/her imagination with lines on the front interface, the "DaDA" will assistant to create a Chinese Shanshui painting and present in the display. Here is a demo video recorded when "DaDA" is first presented in public:
+          <br><br>
+          <strong>Shanshui-DaDA(First Demo with Participants):</strong>
+          <br>
+          <!-- <iframe class="youtube" width="800" height="450" src="https://www.youtube.com/embed/l7rSpJy2t9I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          <iframe src="https://player.vimeo.com/video/305236841" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <br><br>
+          <strong>Hand-sketch vs. Generated Shanshui painting:</strong>
+          <br>
+          <img class="center_img" src="images/projects/DaDA/miki_draw_render.png" width="800">
+          <br><br>
+          More can be found <a href = 'Shanshui-DaDA.html'>here</a>
+        </p>
+
+        <h3>02. Archi-DaDA</h3>
+        <p class="description">
+          The second "DaDA" project is an architecture design project.
+          <br>
+    </section>
+
+    <!-- <section class="content">
+        <h2 class="subtitle">Future Development</h2>
+        <p class="description">
+          This interactive installation will be set up at <a href="http://www.makercarnival.org/">Shanghai Maker Carnival</a> and open to all participants. The most important goal is, of course, to bring "DaDA" into human participants' artwork-creating process so to enjoy the fun of creating with AI! Another side effect will be the generation of more "human-flavor" hand-sketch data. "DaDA" is originally trained by masterpieces along with computer-generated edges(as hand-sketches), which works fine but there are still more to explore. Thanks to cycleGAN's unique feature and ability to work with unpaired data, "DaDA" can be trained again with the generated data and evolves, explores more.
+        </p>
+    </section> -->
+
+</article>
+
+<section class="notes">
+    <a href="https://github.com/aaaven/aaaven.github.io" target="_blank">Source code</a> for this website is available
+    on github.
+</section>
+
+</body>
+</html>
