@@ -362,12 +362,8 @@ img {
 .center_video{
     display: block;
     margin: 0 -18px;
+    border-radius: 5px;
 }
-
-/* .youtube {
-  display: block;
-  border-radius: 5px;
-} */
 
 p>a{
     /*text-decoration: none;*/
