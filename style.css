@@ -412,6 +412,11 @@ canvas {
 #profile{
     width: 320px;
 }
+
+#bio{
+padding: 0 10px;
+}
+
 @media only screen and (max-device-width : 1024px) {
     /*project info page*/
     .title{
@@ -432,6 +437,7 @@ canvas {
         position: initial;
         width: 100%;  
         font-size: 3vw;
+        padding: 0 18px;
     }
 
     #profile_div {
