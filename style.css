@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
         background: white;
         margin: 45px;
         padding:0;
-        height: 160px;
+        height: 200px;
         width: auto;
         z-index:10;
     }
@@ -136,12 +136,12 @@ h1, h2, h3, h4, h5, h6 {
 
     .logo{
         border-radius: 10px;
-        width:100px;
-        height:100px;
+        width:140px;
+        /* height:100px; */
         margin:30px 0 0 0;
         padding:0;
         float:right;
-        background-color: black;
+        /* background-color: black; */
     }
     nav ul{
         list-style：none;
@@ -154,12 +154,12 @@ h1, h2, h3, h4, h5, h6 {
 
         list-style: none;
         border-radius: 5px;
-        /*background: lightgrey;*/
+        background: lightgrey;
         display: table;
         margin: 0 10px 10px 0;
-        padding:0;
-        width:270px;
-        height:45px;
+        /* padding:0; */
+        width:80%;
+        /* height:45px; */
         float:left;
     }
 
@@ -408,6 +408,22 @@ canvas {
   }
 
 
+  #bio {
+    width: 440px; 
+    position: absolute; 
+    bottom: -1em; 
+    right: 0; 
+    font-size:12px;
+}
+
+#profile_div {
+    position: relative; 
+    width: 800px
+}
+
+#profile{
+    width: 320px;
+}
 @media only screen and (max-device-width : 1024px) {
     .tab_highlight{
         font-weight: lighter;
@@ -428,6 +444,29 @@ canvas {
         text-align: justify;
         font-size: 3vw;
         line-height: 4.5vw;
+    }
+    #bio {
+        position: initial;
+        width: 100%;  
+        font-size: 3vw;
+    }
+
+    #profile_div {
+        position: initial;
+        border-radius: 5px;
+    }
     
+    #profile{
+        position: initial;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #bar > nav > p{
+        display:none;
+    }
+    #bar > nav > ul > li > a > span{
+        background: none;
+        color:white;
     }
 }
