@@ -7,9 +7,19 @@ html, body{
 	color: white;
 }
 
+/* -----------------add p5js to background ------------------------ */
+canvas {
+	position: fixed;
+	bottom: 0px;
+	top:0px;
+	z-index: -3 !important;
+}
+
+/* -----------------add p5js to background ------------------------ */
+
 html{
-	background-image: url(bg.jpg);
-	background-size: 100%;
+	/* background-image: url(bg.jpg); */
+	background-size: 100%; 
 	/* padding: 5% 20%; */
 	/* background-color:rgba(150,50,50,0.9); */
 }

@@ -19,7 +19,7 @@ function setup() {
     window.innerWidth,
     window.innerHeight
   );
-
+  
   background(0);
   seedParticles();
 }
