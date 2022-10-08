@@ -46,7 +46,7 @@ function Particle(x, y){
 	this.dir = createVector(0, 0);
 	this.vel = createVector(0, 0);
 	this.pos = createVector(x, y);
-	this.speed = 0.4;
+	this.speed = 0.2;
 
 	this.move = function(){
 		var angle = noise(this.pos.x/noiseScale, this.pos.y/noiseScale)*TWO_PI*noiseScale;
