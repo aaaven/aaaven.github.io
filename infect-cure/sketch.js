@@ -16,7 +16,7 @@ let _width = 720,
   margin = 100,
   _height = 1280;
 let savePainting = false;
-let mockup = false;
+let mockup = true;
 let index = 0;
 let frameNum = 12000;
 
