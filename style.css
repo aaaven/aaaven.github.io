@@ -272,6 +272,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: -125px 10px 5px 10px;
     z-index: 10;
 }
+
 .class_title, .class_time, .class_lan,.project_title, .project_time,.project_lan{
     display: inline-block;
     width: 250px;
