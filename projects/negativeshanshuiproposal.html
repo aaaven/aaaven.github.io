@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aven::fusion beauty</title>
+    <link rel="icon" href="../images/logo.svg">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png"/>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <section id="bar">
+        <a href="../index.html"><img src="../images/logo.png" width=180 class="logo"></a>
+        <nav>
+            <p style="text-align: center;">I enjoy coffee, beer, hotpot and extreme sports.
+                <br><br>
+                "Meanwhile, I do {} for profession".format<br>(a, v, e, n)</p>
+            <ul>
+                <li>
+                    <a href="../practice.html"><span>a = Practice</span></a>
+                </li>
+                <li>
+                    <a href="../research.html"><span>v = Research</span></a>
+                </li>
+                <li>
+                    <a href="../professorship.html"><span>e = Professorship</span></a>
+                </li>
+                <li>
+                    <a href="../entrepreneurship.html"><span>n = Entrepreneurship<br>(postponed)</span></a>
+                </li>
+                <li id="contact_aven">
+                    <a href="../about.html"><span>About</span></a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+<article>
+    <section class="content">
+        <h1 class="title">Negative Shanshui (Proposal)</h1>
+        <p class="project_time">2024</p>
+        <br>
+        <div class="project_lan">
+            Language:
+            <a>Stable Difussion</a>
+            <a>Python</a>
+        </div>
+        <br>
+    </section>
+
+    <section class="content">
+        <h2 class="subtitle">Overview</h2>
+        
+        <p class="description">
+
+            This interactive art experience, entitled "Negative Shanshui," serves as a dynamic confluence of eastern aesthetics and pressing ecological concerns, where the embodied interaction and aesthetic engagement of classical Chinese landscape painting (i.e., shanshui) interweave with the non-positive consequences of humanity's imprint on nature. The underlying narrative of "Negative Shanshui" revolves around the juxtaposition of landscape painting and nature landscape along with their involvement with AI-generated imagery representing environmental degradation. 
+            <br><br>
+            Upon encountering the serene shanshui rear-projected onto the textile surface (i.e. shanshui interface), the audience is invited to physically interact with the artwork. Their touch, pressure, and movements on the ‘shanshui interface’ dynamically influence the depicted shanshui, initially distorting the projection and subsequently gradually integrating AI-generated visual elements that symbolize environmental degradation.  As engagement progresses, the shanshui evolves into a disturbing depiction of wasteland, metaphorically highlighting the negative human footprints on the natural environment. 
+            <br><br>
+            However, 'Negative Shanshui' transcends the mere portrayal of nature-human clash, encapsulating the audience in an ongoing narrative through embodied aesthetic experience, sparking contemplation of their own influence on nature and fostering ecological awareness after the aesthetic revelation.
+        </p>
+
+        <p class="description">
+            <img class="center_img" src="../images/projects/negativeshanshui/fig1a.png" width="800">
+            Fig.1(a) Shanshui Interface: from tactile interaction to textile deformation.  
+            <br><br>
+            <img class="center_img" src="../images/projects/negativeshanshui/fig1b.png" width="800">
+            Fig.1(b) Physical actions stimuli shanshui transformation. 
+            <br><br>
+            The tactile interaction with the shanshui interface surpasses conventional two-dimensional screen-based interaction; as participants touch, press, poke, swipe, and engage bodily on the interface with varying strengths, the stretchy textile responsively curves (see Fig 1.a). The textile’s deformation, denotes the area of interaction, is captured through depth-sensing and blob-detection techniques as a “area map.” This naturally translates the depth information into “stroke weights” in the two-dimensional trajectory, symbolically reflecting the intensity of the participants' engagement through the material's physical properties. In this way, the embodied interaction, depicted as the “area map,” is input to the AI inpainting algorithm that dynamically modifies the projected shanshui in real-time (see Fig 1.b). Thus, participants’ physical action becomes a catalyst for transformation within the shanshui.
+            
+            <br><br>
+            <img class="center_img" src="../images/projects/negativeshanshui/fig2.jpeg" width="800">
+            Fig.2. Inpainting with “area map” and “negative prompts.”
+            <br><br>
+
+            <img class="center_img" src="../images/projects/negativeshanshui/fig3.png" width="800">
+            Fig 3. Dynamic progress of AI-generated wasteland
+            <br><br>
+
+            A comprehensive list of eco-crisis events that have happened in history, indicating humanity’s imprints have left on the natural environment, is collected from online public news and reports of authorities and converted to a list of textual descriptions (i.e., negative prompts). In “Negative Shanshui,” the AI-powered inpainting technique, utilizing stable diffusion, erases the areas affected by participants' interactions (i.e., area map) and replaces them with new imagery generated through text-to-image processes based on the “negative prompts.” This method seamlessly integrates the generated content, depicting man-made environmental issues like polluted waters, deforested landscapes, and soil salinization, into the existing shanshui.
+            <br><br>
+            
+            <!-- <img class="center_img" src="../images/projects/negativeshanshui/inpainting.gif" width="600">
+            Fig 3. Dynamic progress of AI-generated wasteland
+            <br><br> -->
+
+            As participants continuously engage, the shanshui undergoes a negative transformation, gradually evolving into a disturbing depiction of a wasteland, thereby metaphorically highlighting the adverse human footprints on the natural environment. The algorithm ensures that each addition integrates smoothly and enriches the visual narrative. The experience unfolds as participants encounter the pristine beauty of the original landscape, only to witness its unsettling transformation in response to their engagement.
+
+            <br><br>
+            <img class="center_img" src="../images/projects/negativeshanshui/fig4.png" width="800">
+            Fig 4. Participant: Post-Engagement with Video Archive. Spectators: Participation Encouragement 
+
+            <br><br>
+            While the shanshui interface serves as a portal for real-time experiences, the dynamic progress of AI-generated wasteland (see Fig 3), stemming from the participants’ engagement, acts as reflective mirror of ecological consequences. Upon conclusion of interaction, “Negative Shanshui” archives the generated animation alongside its corresponding textual descriptions within a soundtrack. These archived materials are displayed in-loop at the installation's backside (see Fig 4), amplifying the artwork's ecological message. This continuous display allows participants to revisit and reflect on the ecological narratives post-engagement, deepening their awareness of environmental issues. Additionally, the looping video functions as a visual cue to spectator (see Fig 4), indicating the interaction and transformation within the shanshui, thereby encouraging their participation and fostering a broader communal discourse on ecological matters.
+
+            <br><br>
+            The title 'Negative Shanshui' metaphorically captures the core mechanism of the artwork, where human engagement gradually erodes the idealized nature (i.e., shanshui), illustrating the impactful, often negative, imprint humans leave on the environment. By applying embodied interaction through the shanshui painting as an interface, "Negative Shanshui" prompts the audience to a critical discourse and consciousness surrounding ecological concerns and reflect upon the complexities of human-nature interactions in contemporary contexts.
+        </p>
+        
+        <p class="description">
+            Technical Plan:
+        
+            <img class="center_img" src="../images/projects/negativeshanshui/flow.jpeg" width="800">
+        </p>
+        <!-- <p class="description">
+            “Fusion Beauty 湖湘画中人” is a commission project by Tencent Next Idea Program. The idea is to transfer the selfie of a participant to the style of an art crafts (like ancient Chinese vases) and hide/emerge the result into the original piece. With the technology advancements in AI, we design and build softwares to bring the culture to live and present it with modern language, so to draw public's interests to the tradition.
+            <br><br>
+            * commissioned and supported by Tencent Ltd. and Hunan Provincial Museum. 
+            <br>
+            * first prize of Tencent Next Idea competition.
+            <br>
+            * in meida: <a href='https://mp.weixin.qq.com/s/pszOSYTGi8DDU8QF-BUfTA'>Tencent wegeek</a>, <a href='https://mp.weixin.qq.com/s/iiRphNY3LR2R6AcVSmTVIg'>NextIdea腾讯创新大赛</a>.
+            <br>
+            <br>
+            <iframe class="center_img" src="https://player.vimeo.com/video/479472494" width="800" height="1700" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Fusion Beatuty"></iframe>
+            <br>
+            <br>
+            Screen record of the beta version / 小程序录屏
+            <br>
+
+
+            <img class="center_img" src="../images/projects/fusionbeauty/01.png" width="800">
+            <br><br>
+            “湖湘画中人”（Fusion Beauty）是一个人工智能赋能文创的新体验。以人工智能作为文博教育的新载体，在交互游戏的形式中传播传统弘扬文化。artMachines选取来自湖南省博物馆的十二件代表文物训练人工智能识别并学习其图案、纹理等特征风格，并命名该人工智能Fusion Beauty - 湖湘画中人，同时指向该人工智能学习的源头 — 湖湘文化，和其基本功能 — 将人物的照片和湖湘的典型文物风格相融合、将人物“文物风格化”，并更进一步地将“风格化”的人物融入、藏入到这些国宝中以构建在国宝中寻物的互动。 
+            <br><br>
+            <img class="center_img" src="../images/projects/fusionbeauty/02.png" width="800">
+            <br><br>
+            更进一步地，这件作品利用该人工智能的特性打造全新的互动形式实现文博教育。基于青少年关注前沿科技、崇尚互动体验的特征，我们将湖南省博物馆不同代表文物互相融合，例如将青铜豕尊和青花瓷盘融合呈现青花瓷版的豕尊，以新奇的方式重新呈现古老的文化，并以好玩儿有趣的交互方式唤起公众对传统文化的关注。该环节中，用户将先了解湖南省博的典型文物如豕尊、T型帛画等珍贵文物的材质、工艺和背景等，然后可以将T型帛画等拖拽到豕尊上，即时生成T型帛画融合版豕尊。在新奇的互动中自然而然地了解国宝背后的文化历史，体验传统文化背后的意趣。
+            <br><br>
+            <img class="center_img" src="../images/projects/fusionbeauty/03.png" width="800">
+            <br><br>
+            在科普互动之后，用户上传自己的图片，人工智能将照片以湖湘文物的风格呈现并且将用户融入、藏入到文物中。用户通过拖动“放大镜”，一寸一寸仔细观察文物并期待从中找到“文物风格化”之后的自己。游戏式的体验中，用户近距离和文物接触和互动。
+            <br><br>
+            <img class="center_img" src="../images/projects/fusionbeauty/04.png" width="800">
+            <br><br>
+            <img class="center_img" src="../images/projects/fusionbeauty/05.png" width="800">
+            <br><br>
+            当用户看到自己心仪的风格或锁定最有趣的文物，可以将生成的图片将被分享到朋友圈中，吸引更多的朋友参与。通过微信小程序基于社交的分享、推广湖南省博的文物和品牌，更进一步普及湖湘文化。人工智能赋能文化创意产业，打造全新湖南省博形象。
+        </p>
+
+        <p class="description">
+            * This project is a wechat mini program built for Tencent Next Idea competition and Hunan Museum. Use wechat to scan the following QR code to access the public beta:
+            <br><br>
+            <img class="center_img" src="../images/projects/fusionbeauty/QRcode.jpg" width="800">
+            <br><br>
+            * 本件作品为artMachines为腾讯Next Idea大赛 & 湖南省博物馆设计制作。微信扫描上方小程序二维码体验.
+            <br><br>
+        </p> -->
+    </section>
+
+</article>
+
+<section class="notes">
+    <a href="https://github.com/aaaven/aaaven.github.io" target="_blank">Source code</a> for this website is available
+    on github.
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
