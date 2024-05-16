@@ -1,16 +1,29 @@
 let img;
-
-function preload(){
-  img = loadImage("https://www.aven.cc/images/teaching.png");
-}
+let t = 0, dt = 1;
 function setup() {
   createCanvas(windowWidth,windowHeight);
   let cw = width-200, ch = height-200;
-  img.resize(cw,ch);
+  let constraints = {
+    video: {
+      mandatory: {
+        minWidth: 1280,
+        minHeight: 960
+      },
+      optional: [{ maxFrameRate: 24 }]
+    },
+    audio: false
+  };
+  img = createCapture(constraints);
+  img.size(cw,ch)
+  img.hide();
+  // console.log("img: " + img.width + " : " + img.height);
+  // createCanvas(img.width + 200, 200 + img.height);
+  // console.log("w/h: " + width + " : " + height);
+  // fullscreen(true);
 }
 
 function draw() {
-
+  
   // fill(220);
   // rect(0,0,width,height);
   background(220);
@@ -44,7 +57,12 @@ function draw() {
     }
   }
 */
-  let t = int(frameCount/2) % img.height;
+  
+  // let t = int(frameCount/2) % img.height;
+  t += dt;
+  
+  if(t >= img.height || t <=0) dt = -dt;
+  
   for(let x = 0; x< img.width; x++){
     var index = (x + t * img.width) * 4;
       // get the r value of the current pixel

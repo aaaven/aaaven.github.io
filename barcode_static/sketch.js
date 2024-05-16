@@ -1,7 +1,10 @@
 let img;
+let t = 0, dt = 1;
 
 function preload(){
   img = loadImage("https://www.aven.cc/images/teaching.png");
+  // img = loadImage("http://87.138.157.245/record/current.jpg",handleError);
+  
 }
 function setup() {
   createCanvas(windowWidth,windowHeight);
@@ -44,7 +47,12 @@ function draw() {
     }
   }
 */
-  let t = int(frameCount/2) % img.height;
+  // let t = int(frameCount/2) % img.height;
+  
+  t += dt;
+  
+  if(t >= img.height || t <=0) dt = -dt;
+  
   for(let x = 0; x< img.width; x++){
     var index = (x + t * img.width) * 4;
       // get the r value of the current pixel
@@ -70,4 +78,8 @@ function mousePressed() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   img.size(width-200,height-200);
+}
+
+function handleError(event) {
+  console.error('Oops!', event);
 }
