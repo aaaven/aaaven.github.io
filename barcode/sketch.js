@@ -61,7 +61,7 @@ function draw() {
   // let t = int(frameCount/2) % img.height;
   t += dt;
   
-  if(t >= img.height || t <=0) dt = -dt;
+  if(t >= img.height-1 || t <=0) dt = -dt;
   
   for(let x = 0; x< img.width; x++){
     var index = (x + t * img.width) * 4;
