@@ -1,36 +1,23 @@
 let img;
 
+function preload(){
+  img = loadImage("https://www.aven.cc/images/teaching.png");
+}
 function setup() {
-  let cw = 1280, ch = 960;
-  createCanvas(cw+200,ch+200);
-  let constraints = {
-    video: {
-      mandatory: {
-        minWidth: 1280,
-        minHeight: 960
-      },
-      optional: [{ maxFrameRate: 24 }]
-    },
-    audio: false
-  };
-  img = createCapture(constraints);
-  img.size(cw,ch)
-  img.hide();
-  console.log("img: " + img.width + " : " + img.height);
-  // createCanvas(img.width + 200, 200 + img.height);
-  console.log("w/h: " + width + " : " + height);
-    fullscreen(true);
-
+  createCanvas(windowWidth,windowHeight);
+  let cw = width-200, ch = height-200;
+  img.resize(cw,ch);
 }
 
 function draw() {
+
   // fill(220);
   // rect(0,0,width,height);
   background(220);
   translate(0.5*(width-img.width),0.5*(height-img.height));
   img.loadPixels();
-  console.log("img: " + img.width + " : " + img.height);
-  console.log("w/h: " + width + " : " + height);
+  // console.log("img: " + img.width + " : " + img.height);
+  // console.log("w/h: " + width + " : " + height);
 
   /*
   // nested for loops to step throughthe image 
@@ -70,7 +57,7 @@ function draw() {
     line(x,0,x,img.height-1);
   }
 img.updatePixels();
-  if(!fullscreen())image(img,0,0, img.width/4,img.height/4);
+  // if(!fullscreen())image(img,0,0, img.width/4,img.height/4);
 }
 
 function mousePressed() {
